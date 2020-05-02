@@ -18,12 +18,21 @@
     src: url('../fonts/Roboto-Medium.ttf');
 }
 
+* {
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+}
+
 body {
     background: #F6F7FF;
     font-family: 'Roboto', sans-serif;
     margin: 60px 50px;
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 
@@ -32,6 +41,119 @@ a {
     text-decoration: none;
     transition: 0.3s;
 }
+
+main {
+    margin-left: 80px;
+    width: 70%;
+}
+
+header, section {
+    border-radius: 17px;
+    margin-bottom: 68px;
+}
+
+ section {
+    padding: 35px 55px;
+    background: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.16);
+}
+
+ 
+section h2 {
+    font-family: 'Roboto-Bold';
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+section hr {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #FF8C00;
+    width: 34px;
+    height: 5px;
+    margin-bottom: 50px;
+} 
+
+/* Buttons */
+
+.buttons {
+    display: flex;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-family: 'Roboto-Bold';
+}
+
+.big {
+    width: 220px;
+    height: 62px;
+    font-size: 1.12em;
+    margin-right: 20px;
+}
+
+.medium {
+    width: 200px;
+    height: 45px;
+    font-size: 0.87em;
+    margin-right: 40px;
+}
+
+.orange {
+    background: #FF8C00;
+    transition: 0.5s;
+}
+
+.orange:hover {
+    cursor: pointer;
+    background: #C66D00;
+}
+
+.blue {
+    background: #2176FF;
+    transition: 0.5s;
+}
+
+.blue:hover {
+    cursor: pointer;
+    background: rgb(78, 142, 243);
+}
+
+.outline {
+    border: 2px solid white;
+}
+
+.outline:hover {
+    background: white;
+    border: 2px solid #2176FF;
+    color: #2176FF;
+}
+
+.outline svg path {
+    transition: 0.5s;
+}
+.outline:hover svg path {
+    fill: #2176FF;
+}
+
+.big svg {
+    width: 29px;
+    vertical-align: middle;
+    margin-right: 11px;
+}
+
+.medium svg, .medium img  {
+    width: 24px;
+    vertical-align: middle;
+    margin-right: 11px;
+}
+
+
+/* End buttons */
 
 /* Nav menu */
 
@@ -61,6 +183,8 @@ nav div:first-child {
 
 
 nav img {
+    width: 80px;
+    height: auto;
     border-radius: 50%;
 }
 
@@ -133,23 +257,6 @@ nav ul li img {
 
 /* End nav menu */
 
- 
-main {
-    margin-left: 80px;
-    width: 70%;
-}
-
-header, section {
-    border-radius: 17px;
-    padding: 25px;
-    margin-bottom: 68px;
-}
-
-section {
-    background: white;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.16);
-}
-
 
 /* Header */
 
@@ -161,6 +268,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 532px;
+    padding: 25px;
     color: white;
     font-family: 'Roboto-Bold';
 }
@@ -178,61 +286,57 @@ header p {
     margin-bottom: 71px;
 }
 
-.buttons {
-    display: flex;
-}
-
-.btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.12em;
-    margin-right: 20px;
-    width: 220px;
-    height: 62px;
-    border-radius: 50px;
-}
-
-.orange {
-    background: #FF8C00;
-    transition: 0.5s;
-}
-
-.orange:hover {
-    cursor: pointer;
-    background: #C66D00;
-}
-
-.outline {
-    border: 2px solid white;
-}
-
-.outline:hover {
-    background: white;
-    border: 2px solid #2176FF;
-    color: #2176FF;
-}
-
-.outline svg path {
-    transition: 0.5s;
-}
-.outline:hover svg path {
-    fill: #2176FF;
-}
-
-.buttons svg {
-    width: 29px;
-    vertical-align: middle;
-    margin-right: 11px;
-}
-
 /* End header */
 
 
 
 /* Section about */
 
+#about {
+    height: 550px;
+}
 
+#content-container > img {
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    margin-right: 43px;
+}
+
+#content-container, #summary-info {
+    display: flex;
+}
+
+#summary-info {
+    color: #848484;
+    margin-bottom: 72px;
+}
+
+#content-about > p {
+    font-family: 'Roboto-Bold';
+    font-size: 1.06em;
+    margin-bottom: 51px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    /* This is the dangerous one in WebKit, as it breaks things wherever */
+    word-break: break-all;
+    /* Instead use this non-standard one: */
+    word-break: break-word;
+}
+
+#summary-info > div {
+    margin-right: 40px;
+}
+
+#summary-info div p {
+    margin-bottom: 21px;
+}
+
+#summary-info strong {
+    color: #000000;
+    font-family: 'Roboto-Bold';
+}
 
 /* End section about */
 
@@ -240,11 +344,40 @@ header p {
 
 /* Responsive */
 
+@media screen and (max-width: 1250px) {
+
+    section, #about {
+        height: auto;
+    }
+
+    /* About */
+
+    #content-container > img {
+        display: none;
+    }
+
+    #content-about .buttons {
+        margin: 0;
+        justify-content: center;
+    }
+
+    #summary-info {
+        margin-bottom: 30px;
+    }
+
+    /* End about */
+}
+
 @media screen and (max-width: 991px) {
     body {
         flex-direction: column;
         justify-content: flex-start;
         margin: 0px 20px;
+    }
+
+    main {
+        width: 100%;
+        margin: 38px 0px 0px 0px;
     }
 
     /* Nav menu */
@@ -301,11 +434,6 @@ header p {
     
     /* End Nav menu */
 
-    main {
-        width: 100%;
-        margin: 38px 0px 0px 0px;
-    }
-
 }
 
 @media screen and (max-width: 855px) {
@@ -330,10 +458,12 @@ header p {
     nav ul {
         opacity: 0;
         height: 0;
-    }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
 
     nav ul li {
-        font-size: 1.5em;
         margin-bottom: 10px;
     }
 
@@ -354,22 +484,30 @@ header p {
     }
 
     .responsive-menu {
-        display: flex;
         height: auto;
         opacity: 1;
-        flex-direction: column;
-        align-items: center;
         margin: 0;
         padding-top: 15px;
         width: 100%;
         background: #2176FF;
         border-radius: 0px 0px 17px 17px;
         transition: opacity 0.5s;
+        font-size: 1.5em;
+        box-shadow: 0 5px 5px rgba(0,0,0,0.75);
     }
     /* End nav menu */
 }
 
 @media screen and (max-width: 580px) {
+
+    header, section, #about {
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    section {
+        padding: 20px;
+    }
 
     /* Nav */
     .content-nav p{
@@ -378,15 +516,32 @@ header p {
 
     /* End nav */
 
-    /* Header */
+    /* Buttons */
     .buttons {
         flex-direction: column;
+        align-items: center;
     }
 
     .btn {
+        margin-right: 0px;
         margin-bottom: 15px;
     }
-    /* End header */
+    /* End buttons */
+
+    /* Headers */
+
+    header h2 {
+        font-size: 3em;
+    }
+
+    /* End headers */
+
+
+    /* About */
+    #summary-info {
+        flex-wrap: wrap;
+    } 
+    /* End about */
 }
 
 
