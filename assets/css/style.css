@@ -341,6 +341,20 @@ header p {
 /* End section about */
 
 
+/* Section experiences */
+
+#experiences {
+    display: flex;
+    justify-content: space-around;
+}
+
+#pro, #school {
+    width: 100%;
+}
+
+/* End section */
+
+
 
 /* Responsive */
 
