@@ -210,11 +210,9 @@ header p {
 .outline:hover {
     background: white;
     border: 2px solid #2176FF;
-}
-
-.outline:hover a {
     color: #2176FF;
 }
+
 .outline svg path {
     transition: 0.5s;
 }
@@ -254,6 +252,7 @@ header p {
         width: 100%;
         height: 120px;
         top: 10px;
+        box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
     }
 
     nav img {
@@ -329,7 +328,8 @@ header p {
     }  
 
     nav ul {
-        display: none;
+        opacity: 0;
+        height: 0;
     }
 
     nav ul li {
@@ -350,7 +350,7 @@ header p {
     }
 
     .burger:checked:before {
-    content: url('data:image/svg+xml;utf8,<svg width="32px" height="32px" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM7.70711 15.7071L11 12.4142L14.2929 15.7071L15.7071 14.2929L12.4142 11L15.7071 7.70711L14.2929 6.29289L11 9.58579L7.70711 6.29289L6.29289 7.70711L9.58579 11L6.29289 14.2929L7.70711 15.7071Z" fill="white"/></svg>');
+        content: url('data:image/svg+xml;utf8,<svg width="32px" height="32px" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20ZM7.70711 15.7071L11 12.4142L14.2929 15.7071L15.7071 14.2929L12.4142 11L15.7071 7.70711L14.2929 6.29289L11 9.58579L7.70711 6.29289L6.29289 7.70711L9.58579 11L6.29289 14.2929L7.70711 15.7071Z" fill="white"/></svg>');
     }
 
     .responsive-menu {
@@ -364,7 +364,7 @@ header p {
         width: 100%;
         background: #2176FF;
         border-radius: 0px 0px 17px 17px;
-        transition: display 0.5s;
+        transition: opacity 0.5s;
     }
     /* End nav menu */
 }
