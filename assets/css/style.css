@@ -267,7 +267,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 532px;
+    height: 580px;
     padding: 25px;
     color: white;
     font-family: 'Roboto-Bold';
@@ -343,7 +343,13 @@ header p {
 
 /* Section experiences */
 
-#experiences {
+#experiences > h2 {
+    font-size: 1.06em;
+    color: #848484;
+    margin-bottom: 32px;
+}
+
+#experiences-container {
     display: flex;
     justify-content: space-around;
 }
@@ -352,7 +358,77 @@ header p {
     width: 100%;
 }
 
-/* End section */
+.timeline {
+    margin-top: 80px;
+}
+
+.timeline-item {
+    display: flex;
+}
+
+.timeline-date {
+    width: 20%;
+    margin-right: 15px;
+    color: #848484;
+    font-size: 0.68em;
+}
+
+.line {
+    position: relative;
+    border-left: 1px solid #FF8C00;
+    width: 5%;
+    margin-right: 15px;
+}
+
+.line:before {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    border: 1px solid #FF8C00;
+    background: white;
+    position: absolute;
+    left: -5px;
+    height: 7px;
+    width: 7px;
+}
+
+.timeline-body {
+    width: 75%;
+    margin-bottom: 80px;
+}
+
+.timeline-body h3 {
+    font-family: 'Roboto-Bold';
+    font-size: 1em;
+    margin-bottom: 19px;
+}
+
+.timeline-body p {
+    margin-bottom: 15px;
+}
+
+.timeline-body ul {
+    margin-left: 15px;
+}
+
+.timeline-body ul li {
+    margin-bottom: 10px;
+}
+
+.timeline-body p, .timeline-body ul {
+    color: #3E3535;
+    font-size: 0.90em;
+}
+
+.end-timeline {
+    border: 0;
+    position: relative;
+    width: 5%;
+    margin-right: 10px;
+}
+
+
+/* End section experiences */
 
 
 
@@ -380,6 +456,20 @@ header p {
     }
 
     /* End about */
+
+
+    /* Experiences */
+
+    #experiences-container {
+        flex-direction: column;
+    }
+
+    #school {
+        margin-top: 40px;
+    }
+
+
+    /* End experiences */
 }
 
 @media screen and (max-width: 991px) {
@@ -400,6 +490,7 @@ header p {
         height: 120px;
         top: 10px;
         box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+        z-index: 100;
     }
 
     nav img {
