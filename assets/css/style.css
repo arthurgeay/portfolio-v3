@@ -26,6 +26,10 @@
     -webkit-box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #F6F7FF;
     font-family: 'Roboto', sans-serif;
@@ -89,6 +93,12 @@ section hr {
     font-family: 'Roboto-Bold', sans-serif;
 }
 
+.enormous {
+    width: 100%;
+    height: 44px;
+    border-radius: 6px;
+}
+
 .big {
     width: 220px;
     height: 62px;
@@ -101,6 +111,13 @@ section hr {
     height: 45px;
     font-size: 0.87em;
     margin-right: 40px;
+}
+
+.small {
+    width: 80px;
+    height: 20px;
+    margin: auto;
+    font-size: 0.8em;
 }
 
 .orange {
@@ -123,6 +140,17 @@ section hr {
     background: rgb(78, 142, 243);
 }
 
+.white {
+    background: white;
+    color: black;
+}
+
+.white:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
 .outline {
     border: 2px solid white;
 }
@@ -131,6 +159,17 @@ section hr {
     background: white;
     border: 2px solid #2176FF;
     color: #2176FF;
+}
+
+.outline-inverse {
+    border: 2px solid #2176FF;
+    color: #2176FF;
+}
+
+.outline-inverse:hover {
+    background: #2176FF;
+    border: 2px solid #2176FF;
+    color:white;
 }
 
 .outline svg path {
@@ -149,7 +188,13 @@ section hr {
 .medium svg, .medium img  {
     width: 24px;
     vertical-align: middle;
-    margin-right: 11px;
+
+}
+
+.small img {
+    width: 12px;
+    vertical-align: middle;
+    margin-left: 5px;
 }
 
 
@@ -516,6 +561,92 @@ header p {
 /* End skills section */
 
 
+/* Projects section */
+
+#projects .buttons {
+    justify-content: center;
+}
+
+#projects .btn {
+    text-align: center;
+}
+
+#pro-projects {
+    margin-right: 0;
+}
+
+#projects-container {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    position: relative;
+    width: 30%;
+    height: 250px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.16);
+    margin-bottom: 40px;
+}
+
+.project-item > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.overlay-project {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #FF8C00;
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.project-item:hover .overlay-project {
+    opacity: 1;
+}
+
+.overlay-project h3 {
+    text-align: left;
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 1em;
+    margin-bottom: 7px;
+}
+
+.overlay-project p  {
+    font-size: 0.7em;
+}
+
+.technologies {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.technologies img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px
+}
+
+/* End projects section */
+
+
 
 /* Responsive */
 
@@ -562,6 +693,11 @@ header p {
     }
 
     /* End skills */
+
+    .project-item {
+        width: 40%;
+    }
+
 }
 
 @media screen and (max-width: 991px) {
@@ -693,6 +829,10 @@ header p {
         box-shadow: 0 5px 5px rgba(0,0,0,0.75);
     }
     /* End nav menu */
+
+    .project-item {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 580px) {
@@ -720,9 +860,15 @@ header p {
     }
 
     .btn {
-        margin-right: 0px;
         margin-bottom: 15px;
     }
+
+    header .btn, #about .btn, #projects > .buttons .btn{
+        margin-right: 0px;
+    }
+
+
+
     /* End buttons */
 
     /* Headers */
