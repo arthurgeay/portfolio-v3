@@ -60,7 +60,7 @@ header, section {
 
  
 section h2 {
-    font-family: 'Roboto-Bold';
+    font-family: 'Roboto-Bold', sans-serif;
     font-size: 1.5em;
     margin-bottom: 15px;
 }
@@ -86,7 +86,7 @@ section hr {
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    font-family: 'Roboto-Bold';
+    font-family: 'Roboto-Bold', sans-serif;
 }
 
 .big {
@@ -270,7 +270,7 @@ header {
     height: 580px;
     padding: 25px;
     color: white;
-    font-family: 'Roboto-Bold';
+    font-family: 'Roboto-Bold', sans-serif;
 }
 
 header h2 {
@@ -282,7 +282,7 @@ header p {
     max-width: 590px;
     text-align: center;
     font-size: 1.18em;
-    font-family: 'Roboto-Medium';
+    font-family: 'Roboto-Medium', sans-serif;
     margin-bottom: 71px;
 }
 
@@ -313,7 +313,7 @@ header p {
 }
 
 #content-about > p {
-    font-family: 'Roboto-Bold';
+    font-family: 'Roboto-Bold', sans-serif;
     font-size: 1.06em;
     margin-bottom: 51px;
     overflow-wrap: break-word;
@@ -335,7 +335,7 @@ header p {
 
 #summary-info strong {
     color: #000000;
-    font-family: 'Roboto-Bold';
+    font-family: 'Roboto-Bold', sans-serif;
 }
 
 /* End section about */
@@ -398,7 +398,7 @@ header p {
 }
 
 .timeline-body h3 {
-    font-family: 'Roboto-Bold';
+    font-family: 'Roboto-Bold', sans-serif;
     font-size: 1em;
     margin-bottom: 19px;
 }
@@ -429,6 +429,91 @@ header p {
 
 
 /* End section experiences */
+
+
+/* Skills section */
+
+#skills {
+    color: white;
+    background: #2176FF;
+}
+
+#skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skills-item {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    width: 18%;
+    height: 155px;
+    background: #F5F5F5;
+    color: black;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+
+
+.skills-item p {
+    margin-top: 22px;
+    text-align: center;
+    font-size: 0.87em;
+}
+
+.skills-item p, .skills-item h3 {
+    font-family: 'Roboto-Bold', sans-serif;
+}
+
+.overlay-skills {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #FF8C00;
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.skills-item img {
+    margin: 0 10px;
+}
+
+.skills-item:hover .overlay-skills, .skills-item:active .overlay-skills {
+    opacity: 1;
+}
+
+.skills-item h3 {
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.overlay-skills ul {
+    list-style-type: none;
+}
+
+.overlay-skills ul li {
+    font-size: 0.76em;
+    text-align: center;
+    margin-top: 10px;
+}
+ 
+/* End skills section */
 
 
 
@@ -468,8 +553,15 @@ header p {
         margin-top: 40px;
     }
 
-
     /* End experiences */
+
+    /* Skills */
+
+    .skills-item {
+        width: 40%;
+    }
+
+    /* End skills */
 }
 
 @media screen and (max-width: 991px) {
