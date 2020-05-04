@@ -226,6 +226,10 @@ nav div ul a:hover{
     padding-left: 10px;
 }
 
+nav ul li.active a {
+    color: #FF8C00;
+}
+
 nav div:first-child {
     margin: 25px;
 }  
