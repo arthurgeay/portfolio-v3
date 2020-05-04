@@ -659,6 +659,10 @@ header p {
 /* End projects section */
 
 /* Section contact */
+#contact {
+    height: 320px;
+    margin-bottom: 200px;
+}
 
 #contact p {
     text-align: center;

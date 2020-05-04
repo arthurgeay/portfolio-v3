@@ -7,37 +7,41 @@ const proProjects = document.querySelector('#pro-projects');
 
 const data = [
     {
-        img: "assets/img/projects/salty.png",
+        img: "assets/img/projects/forteroche.png",
         type: "school",
-        title: "Salty - Logiciel de chiffrement de fichier",
-        description: "Développement logiciel",
+        title: "Blog d'un auteu",
+        description: "Développement fullstack",
         technos: [
             {
-                img: "assets/img/svg/skills-icon/python.svg"
-            }
+                img: "assets/img/svg/skills-icon/html.svg"
+            },
+            {
+                img: "assets/img/svg/skills-icon/css.svg"
+            },
+            {
+                img: "assets/img/svg/skills-icon/php.svg" 
+            },
+            {
+                img: "assets/img/svg/skills-icon/mysql-white.svg"
+            },
+
         ],
-        github: "https://github.com/arthurgeay/salty",
-        site: "",
+        github: "https://github.com/arthurgeay/blog_p3",
+        site: "https://jeanforteroche.arthurgeay.fr",
         loaded: false
     },
     {
-        img: "assets/img/projects/tricycle.png",
+        img: "assets/img/projects/moncoutant.png",
         type: "school",
-        title: "Tricycle - Application mobile & API",
-        description: "Développement backend",
+        title: "Site web d'une mairie",
+        description: "Développement WordPress",
         technos: [
             {
-                img: "assets/img/svg/skills-icon/Ionic.svg"
-            },
-            {
-                img: "assets/img/svg/skills-icon/nodejs.svg"
-            },
-            {
-                img: "assets/img/svg/skills-icon/mongodb.svg"
+                img: "assets/img/svg/wordpress-blue.svg"
             }
         ],
         github: "",
-        site: "https://app-tricycle.com/",
+        site: "https://moncoutant.arthurgeay.fr",
         loaded: false
     }
 ]
