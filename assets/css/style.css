@@ -641,6 +641,7 @@ header p {
     margin: auto;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .technologies img {
@@ -690,7 +691,6 @@ footer {
     section, #about {
         height: auto;
     }
-
 
 
     /* About */
@@ -813,6 +813,14 @@ footer {
         height: 80px;
     }
 
+    nav ul li a {
+        display: flex;
+    }
+
+    nav ul li img {
+        display: block;
+    }
+
     nav div {
         align-items: center;
     }
@@ -932,6 +940,18 @@ footer {
         flex-wrap: wrap;
     } 
     /* End about */
+
+
+    #projects-container .buttons {
+        flex-direction: row;
+    }
+
+    .small {
+        width: 100px;
+        height: 40px;
+        margin: auto;
+        font-size: 0.8em;
+    }
 
     #contact a {
         margin: 0;
