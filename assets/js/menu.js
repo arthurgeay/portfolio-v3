@@ -33,7 +33,7 @@ const uncheckAndRemoveClass = (checkbox, nav) => {
 /* Add or remove class responsive */
 checkbox.addEventListener('change', (e) => {
     if(e.target.checked) {
-        nav.classList.add('responsive-menu');
+        nav.classList.add('responsive-menu'); 
         detectClickOutSide(checkbox, nav);
 
     } else {
