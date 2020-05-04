@@ -117,6 +117,7 @@ section hr {
 }
 
 .small {
+    min-width: 80px;
     width: 80px;
     height: 20px;
     margin: auto;
@@ -504,7 +505,7 @@ header p {
     flex-direction: column;
     justify-content: center;
     width: 18%;
-    height: 155px;
+    height: 250px;
     background: #F5F5F5;
     color: black;
     border-radius: 12px;
@@ -515,7 +516,8 @@ header p {
 
 .skills-item p {
     margin-top: 22px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     font-size: 0.87em;
 }
 
@@ -596,7 +598,7 @@ header p {
     width: 30%;
     height: 250px;
     border-radius: 12px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
     margin-bottom: 40px;
 }
 
@@ -649,8 +651,8 @@ header p {
 }
 
 .technologies img {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     margin-right: 10px
 }
 
@@ -689,6 +691,12 @@ footer {
 
 
 /* Responsive */
+
+@media screen and (max-width: 1500px) {
+    .skills-item {
+        width: 28%;
+    }
+}
 
 @media screen and (max-width: 1250px) {
 
@@ -730,7 +738,7 @@ footer {
     /* Skills */
 
     .skills-item {
-        width: 40%;
+        width: 35%;
     }
 
     /* End skills */
@@ -807,6 +815,10 @@ footer {
     }
     
     /* End Nav menu */
+
+    .skills-item {
+        width: 28%;
+    }
 
 }
 
@@ -891,8 +903,19 @@ footer {
 
     /* End nav menu */
 
+    .small {
+        margin-top: 15px;
+    }
+    .buttons {
+        flex-direction: column;
+    }
+
+    .skills-item {
+        width: 38%;
+    }
+
     .project-item {
-        width: 100%;
+        width: 38%;
     }
 }
 
@@ -960,6 +983,14 @@ footer {
     #contact a {
         margin: 0;
         width: 100%;
+    }
+
+    .skills-item {
+        width: 58%;
+    }
+
+    .project-item {
+        width: 88%;
     }
 }
 
