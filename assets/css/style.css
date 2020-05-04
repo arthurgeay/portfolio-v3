@@ -906,16 +906,13 @@ footer {
     .small {
         margin-top: 15px;
     }
-    .buttons {
-        flex-direction: column;
-    }
 
     .skills-item {
         width: 38%;
     }
 
     .project-item {
-        width: 38%;
+        width: 88%;
     }
 }
 
@@ -987,10 +984,6 @@ footer {
 
     .skills-item {
         width: 58%;
-    }
-
-    .project-item {
-        width: 88%;
     }
 }
 
