@@ -9,9 +9,9 @@
   Header set Content-Security-Policy "base-uri 'self';"
 
     # Caching
-  <FilesMatch “\.(gif|ico|jpeg|jpg|png|css|js|html)$”>
+  <FilesMatch "\.(gif|ico|jpeg|jpg|png|css|js|html)$">
 
-    Header set Cache-Control “max-age=604800, public”
+    Header set Cache-Control "max-age=604800, public"
 </FilesMatch>
 </IfModule>
 
