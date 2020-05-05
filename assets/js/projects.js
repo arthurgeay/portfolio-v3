@@ -7,7 +7,8 @@ const proProjects = document.querySelector('#pro-projects');
 
 const data = [
     {
-        img: "assets/img/projects/forteroche.png",
+        img: "assets/img/projects/forteroche.webp",
+        alt: "Projet forteroche",
         type: "school",
         title: "Jean Forteroche Blog",
         description: "Développement fullstack d'un blog pour un écrivain",
@@ -31,7 +32,8 @@ const data = [
         loaded: false
     },
     {
-        img: "assets/img/projects/moncoutant.png",
+        img: "assets/img/projects/moncoutant.webp",
+        alt: "Projet moncoutant",
         type: "school",
         title: "Site web d'une mairie",
         description: "Développement WordPress d'un site web pour les activités culturelles de la ville",
@@ -56,6 +58,7 @@ const addProject = (project) => {
 
             const imgProject = document.createElement('img');
             imgProject.src = project.img;
+            imgProject.alt = project.alt;
             const overlayProject = document.createElement('div');
             overlayProject.classList.add('overlay-project');
             const title = document.createElement('h3');
