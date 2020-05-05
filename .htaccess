@@ -2,4 +2,7 @@
   <FilesMatch ".(js|css|xml|gz|html|svg)$">
     Header append Vary: Accept-Encoding
   </FilesMatch>
+  Header always set X-FRAME-OPTIONS "DENY"
+  Header always set X-Content-Type-Options "nosniff"
+  Header set Content-Security-Policy "script-src 'self' https://www.google.com"
 </IfModule>
