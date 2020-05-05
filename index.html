@@ -14,7 +14,7 @@
         <div class="container" id="top">
             <nav>
                 <div>
-                    <img class="lazyload" data-src="assets/img/profile.jpeg" src="assets/img/profile.jpeg" alt="Image de profil">
+                    <img class="lazyload" data-src="assets/img/profile.jpeg" alt="Image de profil">
                     <div class="content-nav">
                         <h1><a href="#top">Arthur Geay</a></h1>
                         <p>Etudiant & développeur web</p>
@@ -115,7 +115,7 @@
                     <h2>A propos</h2>
                     <hr>
                     <div id="content-container">
-                            <img class="lazyload" data-src="assets/img/profile.jpeg" src="assets/img/profile.jpeg" alt="Image de profil" >
+                            <img class="lazyload" data-src="assets/img/profile.jpeg" alt="Image de profil" >
                             
                             <div id="content-about">
                                 <p>
@@ -422,7 +422,10 @@
 
                     <div id="projects-container">
                         <div class="project-item school">
-                            <img data-src="assets/img/projects/tricycle2.webp" src="assets/img/projects/tricycle2.webp" alt="Projet Tricycle" class="lazyload" />
+                            <picture>
+                                <source type="image/webp" data-srcset="assets/img/projects/tricycle2.webp" />
+                                <img data-src="assets/img/projects/tricycle2.png" alt="Projet Tricycle" class="lazyload" />
+                            </picture>
                             <div class="overlay-project">
                                 <h3>Tricycle</h3>
                                 <p>Développement backend d'une application & d'une API permettant de trier ses déchets en scannant les codes barres de produit</p>
@@ -437,7 +440,11 @@
                             </div>
                         </div>
                         <div class="project-item school">
-                            <img data-src="assets/img/projects/salty.webp" src="assets/img/projects/salty.webp" alt="Projet Salty" class="lazyload" />
+                            <picture>
+                                <source type="image/webp" data-srcset="assets/img/projects/salty.webp" />
+                                <img data-src="assets/img/projects/salty.png" alt="Projet Salty" class="lazyload" />
+                            </picture>
+
                             <div class="overlay-project">
                                 <h3>Salty</h3>
                                 <p>Développement logiciel d'un utilitaire graphique de chiffrement/déchiffrement de fichier</p>
@@ -450,7 +457,10 @@
                             </div>
                         </div>
                         <div class="project-item pro">
-                            <img data-src="assets/img/projects/carmanager.webp" src="assets/img/projects/carmanager.webp" alt="Projet Carmanager"class="lazyload" />
+                            <picture>
+                                <source type="image/webp" data-srcset="assets/img/projects/carmanager.webp" />
+                                <img data-src="assets/img/projects/carmanager.png" alt="Projet Carmanager"class="lazyload" />
+                            </picture>
                             <div class="overlay-project">
                                 <h3>Carmanager</h3>
                                 <p>Développement fullstack d'un outil de gestion de parc de véhicules </p>
@@ -461,7 +471,10 @@
                             </div>
                         </div>
                         <div class="project-item pro">
-                            <img data-src="assets/img/projects/vd2.webp" src="assets/img/projects/vd2.webp" alt="Projet portfolio" class="lazyload" />
+                            <picture>
+                                <source type="image/webp" data-srcset="assets/img/projects/vd2.webp" />
+                                <img data-src="assets/img/projects/vd2.png" alt="Projet portfolio" class="lazyload" />
+                            </picture>
                             <div class="overlay-project">
                                 <h3>Portfolio auteure littérature jeunesse</h3>
                                 <p>Développement WordPress</p>
@@ -474,7 +487,11 @@
                             </div>
                         </div>
                         <div class="project-item school">
-                            <img data-src="assets/img/projects/louvre.webp" src="assets/img/projects/louvre.webp" alt="Projet louvre" class="lazyload" />
+                            <picture>
+                                <source type="image/webp" data-srcset="assets/img/projects/louvre.webp" alt="Projet portfolio" />
+                                <img data-src="assets/img/projects/louvre.png" alt="Projet louvre" class="lazyload" />
+                            </picture>
+                            
                             <div class="overlay-project">
                                 <h3>Système de billeterie (Musée du Louvre)</h3>
                                 <p>Développement fullstack d'un système fictif de billeterie</p>
@@ -489,7 +506,11 @@
                             </div>
                         </div>
                         <div class="project-item school">
-                            <img data-src="assets/img/projects/nao.webp" src="assets/img/projects/nao.webp" alt="Projet Nao" class="lazyload" />
+                            <picture>
+                                <source type="image/webp" data-srcset="assets/img/projects/nao.webp" alt="Projet portfolio" />
+                                <img data-src="assets/img/projects/nao.png" alt="Projet Nao" class="lazyload" />
+                            </picture>
+
                             <div class="overlay-project">
                                 <h3>Nos amis les oiseaux</h3>
                                 <p>Développement fullstack d'une application web communautaire sur les observations d'oiseaux </p>
@@ -522,8 +543,8 @@
 
         <footer>
             <p>Arthur Geay Portfolio - <a href="mentions-legales.html">Mentions Légales</a></p>
-        </footer>
-        
+        </footer> 
+
         <script src="assets/js/lazy-loading.js"></script>
         <script src="assets/js/menu.js"></script>
         <script src="assets/js/skills.js"></script>

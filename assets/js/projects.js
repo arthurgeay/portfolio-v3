@@ -7,7 +7,8 @@ const proProjects = document.querySelector('#pro-projects');
 
 const data = [
     {
-        img: "assets/img/projects/forteroche.webp",
+        imgWebp: "assets/img/projects/forteroche.webp",
+        imgPng: "assets/img/projects/forteroche.png",
         alt: "Projet forteroche",
         type: "school",
         title: "Jean Forteroche Blog",
@@ -32,7 +33,8 @@ const data = [
         loaded: false
     },
     {
-        img: "assets/img/projects/moncoutant.webp",
+        imgWebp: "assets/img/projects/moncoutant.webp",
+        imgPng: "assets/img/projects/moncoutant.png",
         alt: "Projet moncoutant",
         type: "school",
         title: "Site web d'une mairie",
@@ -56,9 +58,18 @@ const addProject = (project) => {
             projectItem.classList.add('project-item');
             projectItem.classList.add(project.type);
 
+            const pictureContainer = document.createElement('picture');
+            const source = document.createElement('source');
+            source.type = 'image/webp';
+            source.dataset.srcset = project.imgWebp;
+            pictureContainer.appendChild(source);
+
             const imgProject = document.createElement('img');
-            imgProject.src = project.img;
+            imgProject.dataset.src = project.imgPng;
             imgProject.alt = project.alt;
+            imgProject.classList.add('lazyload');
+            pictureContainer.appendChild(imgProject);
+
             const overlayProject = document.createElement('div');
             overlayProject.classList.add('overlay-project');
             const title = document.createElement('h3');
@@ -92,13 +103,15 @@ const addProject = (project) => {
                 buttonsContainer.appendChild(site);
             }
 
+            projectItem.appendChild(pictureContainer);
             overlayProject.appendChild(title);
             overlayProject.appendChild(description);
             overlayProject.appendChild(technologiesContainer);
             overlayProject.appendChild(buttonsContainer)
             projectItem.appendChild(overlayProject);
-            projectItem.appendChild(imgProject);
             projectsContainer.appendChild(projectItem);
+
+            lazyLoadInstance.update(); // Update the lazyload plugin for new elm add in DOM
 }
 
 /* Display or none elements */
