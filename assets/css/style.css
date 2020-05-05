@@ -552,6 +552,7 @@ header p {
 }
 
 .skills-item img {
+    height: 90px;
     margin: 0 10px;
 }
 
