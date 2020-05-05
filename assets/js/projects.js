@@ -9,8 +9,8 @@ const data = [
     {
         img: "assets/img/projects/forteroche.png",
         type: "school",
-        title: "Blog d'un auteu",
-        description: "Développement fullstack",
+        title: "Jean Forteroche Blog",
+        description: "Développement fullstack d'un blog pour un écrivain",
         technos: [
             {
                 img: "assets/img/svg/skills-icon/html.svg"
@@ -34,7 +34,7 @@ const data = [
         img: "assets/img/projects/moncoutant.png",
         type: "school",
         title: "Site web d'une mairie",
-        description: "Développement WordPress",
+        description: "Développement WordPress d'un site web pour les activités culturelles de la ville",
         technos: [
             {
                 img: "assets/img/svg/wordpress-blue.svg"
