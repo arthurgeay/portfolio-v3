@@ -196,7 +196,7 @@ section hr {
 .medium svg, .medium img  {
     width: 24px;
     vertical-align: middle;
-
+    margin-right: 11px;
 }
 
 .small img {
@@ -358,8 +358,8 @@ header p {
 }
 
 #content-container > img {
-    width: 30%;
-    height: 30%;
+    width: 179px;
+    height: 179px;
     border-radius: 50%;
     margin-right: 43px;
 }
@@ -781,7 +781,7 @@ footer {
         z-index: 100;
     }
 
-    nav img {
+    nav img,  nav ul li img, nav #social-icons {
         display: none;
     }
 
@@ -808,10 +808,6 @@ footer {
         font-size: 1.05em;
     }
 
-    nav ul li img {
-        display: none;
-    }
-
     nav ul li {
         margin-right: 25px;
         margin-bottom: 0px;
@@ -819,10 +815,6 @@ footer {
 
     nav div ul a:hover{
         padding-left: 0px;
-    }
-
-    nav #social-icons {
-        display: none;
     }
     
     /* End Nav menu */
