@@ -7,6 +7,26 @@ const proProjects = document.querySelector('#pro-projects');
 
 const data = [
     {
+        imgWebp: "assets/img/projects/nao.webp",
+        imgPng: "assets/img/projects/nao.png",
+        alt: "Projet NAO",
+        type: "school",
+        title: "Nos amis les oiseaux",
+        description: "Développement fullstack d'une application web communautaire sur les observations d'oiseaux",
+        technos: [
+            {
+                img: "assets/img/svg/skills-icon/symfony.svg"
+            },
+            {
+                img: "assets/img/svg/skills-icon/mysql-white.svg"
+            },
+
+        ],
+        github: "https://github.com/arthurgeay/NAO",
+        site: "https://nao.arthurgeay.fr",
+        loaded: false
+    },
+    {
         imgWebp: "assets/img/projects/forteroche.webp",
         imgPng: "assets/img/projects/forteroche.png",
         alt: "Projet forteroche",
