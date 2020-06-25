@@ -7,6 +7,26 @@ const proProjects = document.querySelector('#pro-projects');
 
 const data = [
     {
+        imgWebp: "assets/img/projects/louvre.webp",
+        imgPng: "assets/img/projects/louvre.png",
+        alt: "Projet Louvre",
+        type: "school",
+        title: "Système de billeterie (Musée du Louvre)",
+        description: "Développement fullstack d'un système fictif de billeterie",
+        technos: [
+            {
+                img: "assets/img/svg/skills-icon/symfony.svg"
+            },
+            {
+                img: "assets/img/svg/skills-icon/mysql-white.svg"
+            },
+
+        ],
+        github: "https://github.com/arthurgeay/louvre",
+        site: "https://louvre.arthurgeay.fr",
+        loaded: false
+    },
+    {
         imgWebp: "assets/img/projects/nao.webp",
         imgPng: "assets/img/projects/nao.png",
         alt: "Projet NAO",
