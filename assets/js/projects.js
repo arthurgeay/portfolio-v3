@@ -7,6 +7,23 @@ const proProjects = document.querySelector('#pro-projects');
 
 const data = [
     {
+        imgWebp: "assets/img/projects/vd2.webp",
+        imgPng: "assets/img/projects/vd2.png",
+        alt: "Projet Portfolio Valérie Dauphin",
+        type: "pro",
+        title: "Portfolio auteure littérature jeunesse",
+        description: "Développement WordPress",
+        technos: [
+            {
+                img: "assets/img/svg/wordpress-blue.svg"
+            }
+
+        ],
+        github: "",
+        site: "https://valerie-dauphin.fr",
+        loaded: false
+    },
+    {
         imgWebp: "assets/img/projects/louvre.webp",
         imgPng: "assets/img/projects/louvre.png",
         alt: "Projet Louvre",
