@@ -33,6 +33,8 @@
 body {
     background: #F6F7FF;
     font-family: 'Roboto', sans-serif;
+    max-width: 1920px;
+    margin: auto;
 }
 
 .container {
