@@ -494,6 +494,14 @@ header p {
     color: #2176FF;
 }
 
+.place-experience a {
+    color: inherit;
+}
+
+.place-experience a:hover {
+    color: #0046b8;
+}
+
 /* End section experiences */
 
 
