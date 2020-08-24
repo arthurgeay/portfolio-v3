@@ -144,20 +144,20 @@ const addProject = (project) => {
                 technologiesContainer.appendChild(imgTechno);
             }
 
-            if(project.github) {
-                const github = document.createElement('a');
-                github.href = project.github;
-                github.innerHTML = 'Github <img src="assets/img/svg/github.svg" />'
-                github.classList.add('btn', 'white', 'small');
-                buttonsContainer.appendChild(github);
-            }
-
             if(project.site) {
                 const site = document.createElement('a');
                 site.href = project.site;
                 site.innerHTML = 'Projet <img src="assets/img/svg/circle-arrow-right.svg" />'
                 site.classList.add('btn', 'white', 'small');
                 buttonsContainer.appendChild(site);
+            }
+
+            if(project.github) {
+                const github = document.createElement('a');
+                github.href = project.github;
+                github.innerHTML = 'Github <img src="assets/img/svg/github.svg" />'
+                github.classList.add('btn', 'white', 'small');
+                buttonsContainer.appendChild(github);
             }
 
             projectItem.appendChild(pictureContainer);
@@ -198,14 +198,17 @@ loadBtn.addEventListener('click', (e) => {
 
     for(let project of data) {
         if(!project.loaded && count < 3) {
-            addProject(project);
-            project.loaded = true;
-            count++;
+            if(project.type == loadBtn.dataset.type || !loadBtn.hasAttribute('data-type')) {
+                addProject(project);
+                project.loaded = true;
+                count++;
+            }
         }
     }
 
-    if(!data.find(x => x.loaded == false)) {
-        loadBtn.style.display = "none";
+    // Display none buttons when all data are loaded for all, school or pro
+    if(!data.find(x => x.loaded == false && (x.type == loadBtn.dataset.type || !loadBtn.hasAttribute('data-type') ))) {
+        loadBtn.style.display = 'none';
     }
 
 });
@@ -214,6 +217,13 @@ loadBtn.addEventListener('click', (e) => {
 
 allProjects.addEventListener('click', (e) => {
     e.preventDefault();
+
+    delete loadBtn.dataset.type;
+    // Display load btn if all data is not loaded
+    if(data.find(x => x.loaded == false)) {
+        loadBtn.style.display = 'flex';
+    }
+
     addOrRemoveClass(allProjects, [schoolProjects, proProjects]);
 
     const proElements = document.querySelectorAll('.pro');
@@ -230,6 +240,13 @@ allProjects.addEventListener('click', (e) => {
 
 schoolProjects.addEventListener('click', (e) => {
     e.preventDefault();
+
+    loadBtn.dataset.type = 'school';
+    // Display load btn if all data is not loaded for school
+    if(data.find(x => x.loaded == false && x.type == 'school' )) {
+        loadBtn.style.display = 'flex';
+    }
+
     addOrRemoveClass(schoolProjects, [allProjects, proProjects]);
 
     const proElements = document.querySelectorAll('.pro');
@@ -241,6 +258,13 @@ schoolProjects.addEventListener('click', (e) => {
 
 proProjects.addEventListener('click', (e) => {
     e.preventDefault();
+
+    loadBtn.dataset.type = 'pro';
+    // Display load btn if all data is not loaded for school
+    if(data.find(x => x.loaded == false && x.type == 'pro' )) {
+        loadBtn.style.display = 'flex';
+    }
+
     addOrRemoveClass(proProjects, [schoolProjects, allProjects]);
 
     const proElements = document.querySelectorAll('.pro');
