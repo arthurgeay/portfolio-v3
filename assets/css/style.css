@@ -485,6 +485,14 @@ header p {
     font-size: 0.90em;
 }
 
+.timeline-body a{
+    color: #2176FF;;
+}
+
+.timeline-body a:hover {
+    color: #0046b8;
+}
+
 .end-timeline {
     border: 0;
     position: relative;
