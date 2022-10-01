@@ -1,601 +1,907 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Arthur Geay. Etudiant en informatique & développeur web freelance.">
-        <link rel="icon" href="assets/img/favicon.ico" />
-        <link rel="stylesheet" href="assets/css/normalize.css" />
-        <link rel="stylesheet" href="assets/css/style.css" />
-        <title>Portfolio - Arthur Geay</title>
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Arthur Geay. Etudiant en informatique & développeur web freelance."
+    />
+    <link rel="icon" href="assets/img/favicon.ico" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Portfolio - Arthur Geay</title>
+  </head>
+  <body>
+    <div class="container" id="top">
+      <nav>
+        <div>
+          <img
+            class="lazyload img-profile"
+            data-src="assets/img/profile.jpeg"
+            alt="Image de profil"
+          />
+          <div class="content-nav">
+            <h1><a href="#top">Arthur Geay</a></h1>
+            <p>Etudiant & développeur web</p>
+          </div>
+          <ul>
+            <li>
+              <a href="#about">
+                <img src="assets/img/svg/user.svg" />
+                A propos
+              </a>
+            </li>
+            <li>
+              <a href="#experiences">
+                <img src="assets/img/svg/case.svg" />
+                Parcours
+              </a>
+            </li>
+            <li>
+              <a href="#skills">
+                <img src="assets/img/svg/code.svg" />
+                Compétences
+              </a>
+            </li>
+            <li>
+              <a href="#projects">
+                <img src="assets/img/svg/menu-dots.svg" />
+                Réalisations
+              </a>
+            </li>
+            <li>
+              <a href="#contact">
+                <img src="assets/img/svg/call-phone.svg" />
+                Contact
+              </a>
+            </li>
+            <li>
+              <a href="https://blog.arthurgeay.fr">
+                <img src="assets/img/svg/circle-arrow-top-right.svg" />
+                Blog
+              </a>
+            </li>
+          </ul>
 
-        <div class="container" id="top">
-            <nav>
-                <div>
-                    <img class="lazyload img-profile" data-src="assets/img/profile.jpeg" alt="Image de profil">
-                    <div class="content-nav">
-                        <h1><a href="#top">Arthur Geay</a></h1>
-                        <p>Etudiant & développeur web</p>
-                    </div>
-                    <ul>
-                        <li>
-                            <a href="#about">
-                                <img src="assets/img/svg/user.svg" />
-                                A propos
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#experiences">
-                                <img src="assets/img/svg/case.svg" />
-                                Parcours
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#skills">
-                                <img src="assets/img/svg/code.svg" />
-                                Compétences
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#projects">
-                                <img src="assets/img/svg/menu-dots.svg" />
-                                Réalisations
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#contact">
-                                <img src="assets/img/svg/call-phone.svg" />
-                                Contact
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://blog.arthurgeay.fr">
-                                <img src="assets/img/svg/circle-arrow-top-right.svg" />
-                                Blog
-                            </a>
-                        </li>
-                    </ul>
+          <div id="social-icons">
+            <a href="https://twitter.com/arthur_geay">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M19.9662 0C8.93918 0 0 8.93918 0 19.9662C0 30.9932 8.93918 39.9324 19.9662 39.9324C30.9932 39.9324 39.9324 30.9932 39.9324 19.9662C39.9324 8.93918 30.9932 0 19.9662 0ZM19.4101 16.9197L19.3682 16.2288C19.2425 14.4381 20.3458 12.8026 22.0916 12.1681C22.734 11.9425 23.8234 11.9143 24.5356 12.1117C24.8149 12.1963 25.3456 12.4783 25.7227 12.7321L26.4071 13.1974L27.1612 12.9577C27.5802 12.8308 28.1388 12.6193 28.3902 12.4783C28.6276 12.3514 28.8371 12.2809 28.8371 12.3232C28.8371 12.5629 28.3204 13.3807 27.8875 13.8319C27.3009 14.4663 27.4685 14.5227 28.6556 14.0998C29.3678 13.8601 29.3818 13.8601 29.2421 14.128C29.1584 14.2689 28.7254 14.7624 28.2645 15.2136C27.4824 15.9891 27.4405 16.0737 27.4405 16.7223C27.4405 17.7233 26.9657 19.8101 26.4909 20.9521C25.611 23.0952 23.7256 25.3089 21.8402 26.4227C19.1867 27.9878 15.6533 28.3826 12.6785 27.4661C11.6869 27.1559 9.9831 26.3663 9.9831 26.2253C9.9831 26.183 10.4998 26.1266 11.1283 26.1125C12.4411 26.0843 13.7539 25.7177 14.8712 25.0692L15.6253 24.618L14.7595 24.3219C13.5305 23.8989 12.4271 22.926 12.1478 22.0096C12.064 21.7135 12.092 21.6994 12.8741 21.6994L13.6841 21.6853L12.9997 21.361C12.1897 20.9521 11.4495 20.2612 11.0864 19.5563C10.8211 19.0487 10.4859 17.7656 10.5836 17.6669C10.6116 17.6246 10.9049 17.7092 11.24 17.822C12.2037 18.1745 12.3294 18.0899 11.7707 17.4977C10.7233 16.4262 10.4021 14.8329 10.9049 13.3243L11.1423 12.6475L12.064 13.564C13.9494 15.411 16.17 16.5108 18.7118 16.8351L19.4101 16.9197Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
 
-                    <div id="social-icons">
+            <a href="https://linkedin.com/in/arthur-geay">
+              <svg
+                width="41"
+                height="40"
+                viewBox="0 0 41 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M20.5371 0C9.5101 0 0.570923 8.93918 0.570923 19.9662C0.570923 30.9932 9.5101 39.9324 20.5371 39.9324C31.5642 39.9324 40.5033 30.9932 40.5033 19.9662C40.5033 8.93918 31.5642 0 20.5371 0ZM10.156 16.5369H14.6808V30.132H10.156V16.5369ZM14.9788 12.3314C14.9495 10.9984 13.9962 9.9831 12.4483 9.9831C10.9004 9.9831 9.88848 10.9984 9.88848 12.3314C9.88848 13.6368 10.8705 14.6813 12.3896 14.6813H12.4185C13.9962 14.6813 14.9788 13.6368 14.9788 12.3314ZM25.7892 16.2176C28.7667 16.2176 30.9989 18.1611 30.9989 22.337L30.9987 30.132H26.4741V22.8586C26.4741 21.0317 25.8194 19.785 24.1814 19.785C22.9313 19.785 22.1867 20.6255 21.8597 21.4372C21.7401 21.7281 21.7107 22.1334 21.7107 22.5397V30.1323H17.1854C17.1854 30.1323 17.245 17.8129 17.1854 16.5372H21.7107V18.4629C22.3112 17.5372 23.3868 16.2176 25.7892 16.2176Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
 
-                        <a href="https://twitter.com/arthur_geay">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9662 0C8.93918 0 0 8.93918 0 19.9662C0 30.9932 8.93918 39.9324 19.9662 39.9324C30.9932 39.9324 39.9324 30.9932 39.9324 19.9662C39.9324 8.93918 30.9932 0 19.9662 0ZM19.4101 16.9197L19.3682 16.2288C19.2425 14.4381 20.3458 12.8026 22.0916 12.1681C22.734 11.9425 23.8234 11.9143 24.5356 12.1117C24.8149 12.1963 25.3456 12.4783 25.7227 12.7321L26.4071 13.1974L27.1612 12.9577C27.5802 12.8308 28.1388 12.6193 28.3902 12.4783C28.6276 12.3514 28.8371 12.2809 28.8371 12.3232C28.8371 12.5629 28.3204 13.3807 27.8875 13.8319C27.3009 14.4663 27.4685 14.5227 28.6556 14.0998C29.3678 13.8601 29.3818 13.8601 29.2421 14.128C29.1584 14.2689 28.7254 14.7624 28.2645 15.2136C27.4824 15.9891 27.4405 16.0737 27.4405 16.7223C27.4405 17.7233 26.9657 19.8101 26.4909 20.9521C25.611 23.0952 23.7256 25.3089 21.8402 26.4227C19.1867 27.9878 15.6533 28.3826 12.6785 27.4661C11.6869 27.1559 9.9831 26.3663 9.9831 26.2253C9.9831 26.183 10.4998 26.1266 11.1283 26.1125C12.4411 26.0843 13.7539 25.7177 14.8712 25.0692L15.6253 24.618L14.7595 24.3219C13.5305 23.8989 12.4271 22.926 12.1478 22.0096C12.064 21.7135 12.092 21.6994 12.8741 21.6994L13.6841 21.6853L12.9997 21.361C12.1897 20.9521 11.4495 20.2612 11.0864 19.5563C10.8211 19.0487 10.4859 17.7656 10.5836 17.6669C10.6116 17.6246 10.9049 17.7092 11.24 17.822C12.2037 18.1745 12.3294 18.0899 11.7707 17.4977C10.7233 16.4262 10.4021 14.8329 10.9049 13.3243L11.1423 12.6475L12.064 13.564C13.9494 15.411 16.17 16.5108 18.7118 16.8351L19.4101 16.9197Z" fill="white"/>
-                            </svg>
-                        </a>
-                        
-                        <a href="https://linkedin.com/in/arthur-geay">
-                            <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5371 0C9.5101 0 0.570923 8.93918 0.570923 19.9662C0.570923 30.9932 9.5101 39.9324 20.5371 39.9324C31.5642 39.9324 40.5033 30.9932 40.5033 19.9662C40.5033 8.93918 31.5642 0 20.5371 0ZM10.156 16.5369H14.6808V30.132H10.156V16.5369ZM14.9788 12.3314C14.9495 10.9984 13.9962 9.9831 12.4483 9.9831C10.9004 9.9831 9.88848 10.9984 9.88848 12.3314C9.88848 13.6368 10.8705 14.6813 12.3896 14.6813H12.4185C13.9962 14.6813 14.9788 13.6368 14.9788 12.3314ZM25.7892 16.2176C28.7667 16.2176 30.9989 18.1611 30.9989 22.337L30.9987 30.132H26.4741V22.8586C26.4741 21.0317 25.8194 19.785 24.1814 19.785C22.9313 19.785 22.1867 20.6255 21.8597 21.4372C21.7401 21.7281 21.7107 22.1334 21.7107 22.5397V30.1323H17.1854C17.1854 30.1323 17.245 17.8129 17.1854 16.5372H21.7107V18.4629C22.3112 17.5372 23.3868 16.2176 25.7892 16.2176Z" fill="white"/>
-                            </svg>
-                        </a>
-                        
-                        <a href="https://github.com/arthurgeay">
-                            <svg width="40" height="39" viewBox="0 0 40 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0711 0C9.06592 0 0.141846 8.92332 0.141846 19.9317C0.141846 28.7381 5.85218 36.2095 13.7707 38.8451C14.7667 39.0296 15.1323 38.4127 15.1323 37.8862C15.1323 37.4109 15.1139 35.8408 15.1053 34.1753C9.56095 35.381 8.39102 31.8236 8.39102 31.8236C7.48446 29.5197 6.17824 28.9071 6.17824 28.9071C4.37006 27.67 6.31454 27.6955 6.31454 27.6955C8.31578 27.8357 9.36953 29.7495 9.36953 29.7495C11.147 32.7966 14.0317 31.9157 15.169 31.4064C15.3478 30.1185 15.8643 29.2385 16.4343 28.7411C12.0077 28.2371 7.35443 26.528 7.35443 18.8906C7.35443 16.7145 8.13295 14.9365 9.40782 13.5406C9.20089 13.0382 8.51874 11.0113 9.60088 8.26583C9.60088 8.26583 11.2744 7.73013 15.0828 10.3089C16.6725 9.86731 18.3774 9.64583 20.0711 9.63824C21.7648 9.64583 23.471 9.86731 25.0636 10.3089C28.8674 7.73013 30.5387 8.26583 30.5387 8.26583C31.6234 11.0113 30.941 13.0382 30.734 13.5406C32.0119 14.9365 32.7851 16.7145 32.7851 18.8906C32.7851 26.5462 28.1229 28.2318 23.6851 28.7253C24.4 29.3438 25.0369 30.5568 25.0369 32.4164C25.0369 35.083 25.0138 37.2294 25.0138 37.8862C25.0138 38.4166 25.3725 39.0382 26.3827 38.8424C34.2969 36.2039 40 28.7352 40 19.9317C40 8.92332 31.0773 0 20.0711 0Z" fill="white"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.6901 28.6177C7.64621 28.717 7.49044 28.7464 7.34853 28.6784C7.20398 28.6134 7.1228 28.4784 7.16966 28.379C7.21256 28.277 7.36866 28.249 7.51288 28.3166C7.65776 28.382 7.74027 28.5183 7.6901 28.6177Z" fill="white"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.49724 29.5181C8.40219 29.6062 8.21639 29.5653 8.09032 29.426C7.95996 29.287 7.93554 29.1012 8.03191 29.0117C8.12992 28.9236 8.31011 28.9649 8.4408 29.1038C8.57116 29.2444 8.59657 29.429 8.49724 29.5181Z" fill="white"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.28303 30.666C9.16092 30.7509 8.96126 30.6713 8.83784 30.4941C8.71573 30.3168 8.71573 30.1043 8.84048 30.0191C8.96423 29.934 9.16092 30.0105 9.286 30.1865C9.40778 30.3663 9.40778 30.5792 9.28303 30.666Z" fill="white"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3595 31.7751C10.2503 31.8955 10.0176 31.8632 9.84736 31.6988C9.67311 31.5381 9.62459 31.31 9.73416 31.1895C9.84472 31.0687 10.0787 31.1027 10.2503 31.2658C10.4232 31.4262 10.476 31.6559 10.3595 31.7751Z" fill="white"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8446 32.419C11.7964 32.5751 11.5724 32.6461 11.3466 32.5798C11.1212 32.5114 10.9737 32.3286 11.0192 32.1708C11.0661 32.0137 11.2912 31.9398 11.5186 32.0107C11.7436 32.0787 11.8915 32.2603 11.8446 32.419Z" fill="white"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4757 32.5385C13.4813 32.7029 13.2899 32.8392 13.0529 32.8418C12.8146 32.8475 12.6219 32.7144 12.6193 32.5527C12.6193 32.3867 12.8064 32.2517 13.0447 32.2477C13.2816 32.2431 13.4757 32.3751 13.4757 32.5385Z" fill="white"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9934 32.2801C15.0218 32.4405 14.8571 32.6052 14.6218 32.6488C14.3904 32.6913 14.1763 32.5923 14.1469 32.4332C14.1182 32.2688 14.2858 32.1041 14.5168 32.0616C14.7525 32.0206 14.9633 32.117 14.9934 32.2801Z" fill="white"/>
-                            </svg>
-                        </a>
-                            
-                    </div>
-                    <input class="burger" type="checkbox">
-                </div>
-            </nav>
-            
-            <main>
-                <header id="welcome">
-                    <h2>Bienvenue</h2>
-                    <p>Passionné d'informatique et de nouvelles technologies, mon projet professionnel s'oriente vers les métiers du web
-                        et plus particulièrement celui de développeur web Backend.</p>
-                    <div class="buttons">
-                        <a href="#projects" class="btn big orange">
-                            <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.7501 4.99472C21.7501 6.32983 22.8321 7.41215 24.1667 7.41215C25.5014 7.41215 26.5834 6.32983 26.5834 4.99472C26.5834 3.65961 25.5014 2.57729 24.1667 2.57729C22.8321 2.57729 21.7501 3.65961 21.7501 4.99472ZM24.1667 17.0819C22.8321 17.0819 21.7501 15.9996 21.7501 14.6645C21.7501 13.3293 22.8321 12.247 24.1667 12.247C25.5014 12.247 26.5834 13.3293 26.5834 14.6645C26.5834 15.9996 25.5014 17.0819 24.1667 17.0819ZM24.1667 26.7516C22.8321 26.7516 21.7501 25.6693 21.7501 24.3342C21.7501 22.9991 22.8321 21.9168 24.1667 21.9168C25.5014 21.9168 26.5834 22.9991 26.5834 24.3342C26.5834 25.6693 25.5014 26.7516 24.1667 26.7516ZM14.5001 26.7516C13.1654 26.7516 12.0834 25.6693 12.0834 24.3342C12.0834 22.9991 13.1654 21.9168 14.5001 21.9168C15.8348 21.9168 16.9167 22.9991 16.9167 24.3342C16.9167 25.6693 15.8348 26.7516 14.5001 26.7516ZM12.0834 14.6645C12.0834 15.9996 13.1654 17.0819 14.5001 17.0819C15.8348 17.0819 16.9167 15.9996 16.9167 14.6645C16.9167 13.3293 15.8348 12.247 14.5001 12.247C13.1654 12.247 12.0834 13.3293 12.0834 14.6645ZM14.5001 7.41215C13.1654 7.41215 12.0834 6.32983 12.0834 4.99472C12.0834 3.65961 13.1654 2.57729 14.5001 2.57729C15.8348 2.57729 16.9167 3.65961 16.9167 4.99472C16.9167 6.32983 15.8348 7.41215 14.5001 7.41215ZM2.41675 24.3342C2.41675 25.6693 3.49873 26.7516 4.83341 26.7516C6.1681 26.7516 7.25008 25.6693 7.25008 24.3342C7.25008 22.9991 6.1681 21.9168 4.83341 21.9168C3.49873 21.9168 2.41675 22.9991 2.41675 24.3342ZM4.83341 17.0819C3.49873 17.0819 2.41675 15.9996 2.41675 14.6645C2.41675 13.3293 3.49873 12.247 4.83341 12.247C6.1681 12.247 7.25008 13.3293 7.25008 14.6645C7.25008 15.9996 6.1681 17.0819 4.83341 17.0819ZM2.41675 4.99472C2.41675 6.32983 3.49873 7.41215 4.83341 7.41215C6.1681 7.41215 7.25008 6.32983 7.25008 4.99472C7.25008 3.65961 6.1681 2.57729 4.83341 2.57729C3.49873 2.57729 2.41675 3.65961 2.41675 4.99472Z" fill="white"/>
-                            </svg>
-                            Mes projets
-                        </a>
-                        <a href="#contact" class="btn big outline">
-                            <svg width="29" height="30" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.74023 2.64378L4.10524 10.5882L4.87699 10.7486L4.10524 10.909L2.74023 18.8534L22.2362 10.7486L2.74023 2.64378ZM5.89495 9.24612L5.25996 5.55042L17.764 10.7486L5.25996 15.9467L5.89495 12.251L13.1232 10.7486L5.89495 9.24612Z" fill="white"/>
-                            </svg>                                
-                            Me contacter
-                        </a>
-                    </div>
-                </header>
-
-                <section id="about">
-                    <h2>A propos</h2>
-                    <hr>
-                    <div id="content-container">
-                            <img class="lazyload" data-src="assets/img/profile.jpeg" alt="Image de profil" >
-                            
-                            <div id="content-about">
-                                <p>
-                                    En parallèle de mes études, je suis développeur web Freelance (depuis 2018).
-                                    Je suis à l'écoute de vos propositions pour des missions de développement web.
-                                </p>
-                                <div id="summary-info">
-                                    <div>
-                                        <p>Nom complet : <strong>Arthur Geay</strong></p>
-                                        <p>Date de naissance : <strong>01/09/1997</strong></p>
-                                    </div>
-                                    <div>
-                                        <p>Adresse : <strong>Nantes</strong></p>
-                                        <p>Adresse e-mail : <strong>arthur.geay@ynov.com</strong></p>
-                                    </div>
-                                </div>
-                                <div class="buttons">
-                                    <a href="assets/doc/CV.pdf" class="btn medium orange">
-                                        <img src="assets/img/svg/download.svg" />
-                                        Télécharger mon CV
-                                    </a>
-                                    <a href="#contact" class="btn medium blue">
-                                        <img src="assets/img/svg/send.svg" />
-                                        Me contacter
-                                    </a>
-                                </div>
-                            </div>
-                    </div>
-
-                </section>
-
-                
-
-                <section id="experiences">
-                    <h2>Parcours</h2>
-                    <div id="experiences-container">
-                        <div id="pro">
-                            <h2>Expériences professionnelles</h2>
-                            <hr>
-
-                            <div class="timeline">
-                                <div class="timeline-item">
-                                    <div class="timeline-date">
-                                        <span>Janvier 2021 - Aujourd'hui</span>
-                                    </div>
-                                    <div class="line"></div>
-                                    <div class="timeline-body">
-                                        <h3>Développeur PHP @ <span class="place-experience"><a href="https://www.vigicorp.fr/">Vigicorp</a></span></h3>
-                                        <p><strong>Les missions :</strong></p>
-                                        <ul>
-                                            <li>Développement de nouvelles fonctionnalités pour l'outil de gestion d'une entreprise <a href="https://www.magestion.bycerfrance.fr">Ma Gestion by Cerfrance</a></li>
-                                            <li>Maintenance applicative</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-date">
-                                        <span>Septembre 2020 - Janvier 2021</span>
-                                    </div>
-                                    <div class="line"></div>
-                                    <div class="timeline-body">
-                                        <h3>Développeur fullstack @ <span class="place-experience"><a href="https://captiv.eu">Captiv</a></span></h3>
-                                        <p><strong>Les missions :</strong></p>
-                                        <ul>
-                                            <li>Développement de nouvelles fonctionnalités pour le backoffice du produit <a href="https://www.mistergaspard.com/">Gaspard.</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-date">
-                                        <span>Juillet 2020 - Août 2020</span>
-                                    </div>
-                                    <div class="line"></div>
-                                    <div class="timeline-body">
-                                        <h3>Stage développeur @ <span class="place-experience"><a href="https://satelix.fr">Satelix</a></span></h3>
-                                        <p><strong>Les missions :</strong></p>
-                                        <ul>
-                                            <li>Analyse et conception d'une application de gestion
-                                                familiale</li>
-                                            <li>Rédaction d'un business plan</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-date">
-                                        <span>Juillet 2019 - Août 2019</span>
-                                    </div>
-                                    <div class="line"></div>
-                                    <div class="timeline-body">
-                                        <h3>Testeur de produit @ <span class="place-experience"><a href="https://www.envoliis.com/">ENVOLiiS</a></span></h3>
-                                        <p><strong>Les missions :</strong></p>
-                                        <ul>
-                                            <li>Mise en place d'un POC sur plusieurs solutions</li>
-                                            <li>Intégration de données existantes dans les nouveaux outils</li>
-                                            <li>Rédaction d'une documentation</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-date">
-                                        <span>Novembre 2018 - Juin 2019</span>
-                                    </div>
-                                    <div class="line"></div>
-                                    <div class="timeline-body">
-                                        <h3>Développeur base de données @ <span class="place-experience"><a href="https://www.envoliis.com/">ENVOLiiS</a></span></h3>
-                                        <p><strong>Les missions :</strong></p>
-                                        <ul>
-                                            <li>Débôguage d'une base de données Access</li>
-                                            <li>Remise en fonctionnement de la base de données</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-date">
-                                        <span>Juillet 2018 - Août 2018</span>
-                                    </div>
-                                    <div class="line"></div>
-                                    <div class="timeline-body">
-                                        <h3>Développeur web @ <span class="place-experience"><a href="https://www.envoliis.com/">ENVOLiiS</a></span></h3>
-                                        <p><strong>Les missions :</strong></p>
-                                        <ul>
-                                            <li>Développement d'un portail Power BI</li>
-                                            <li>Développement d'un outil d'import de contrat</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-date">
-                                        <span>Mai 2018 - Aujourd'hui</span>
-                                    </div>
-                                    <div class="line"></div>
-                                    <div class="timeline-body">
-                                        <h3>Développeur web freelance</h3>
-                                        <p>Création d'une auto-entreprise de développement web.</p>
-                                        <p><strong>Les missions :</strong></p>
-                                        <ul>
-                                            <li>Car Manager (Mai 2018) : Développement d'une application web destinée à gérer la flotte de véhicule des sociétés Duotech, Satelix et ARF</li>
-                                            <li>Valerie-dauphin.fr (Juin 2018) : Développement d'un portfolio pour l'auteure de littérature jeunesse Valérie Dauphin</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <div id="school">
-                            <h2>Formations</h2>
-                            <hr>
-
-                            <div class="timeline">
-                                <div class="timeline-item">
-                                    <div class="timeline-date">
-                                        <span>Septembre 2018 - Aujourd'hui</span>
-                                    </div>
-                                    <div class="line"></div>
-                                    <div class="timeline-body">
-                                        <h3>Bachelor informatique @ <span class="place-experience"><a href="https://www.ynov.com/">Ynov Nantes</a></span></h3>
-                                        <p>Titre d’Expert Informatique et Systèmes d’Information, enregistré au Répertoire National de la Certification Professionnelle (RNCP) au niveau I.)
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-date">
-                                        <span>Janvier 2017 - Janvier 2018</span>
-                                    </div>
-                                    <div class="line"></div>
-                                    <div class="timeline-body">
-                                        <h3>Titre professionnel de Chef de projet multimédia @ <span class="place-experience"><a href="https://openclassrooms.com/fr/">OpenClassrooms / IESA Multimédia</a></span></h3>
-                                        <p>Titre professionnel de Chef de projet multimédia enregistré au Répertoire National de la Certification Professionnelle (RNCP) au niveau II.)
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-date">
-                                        <span>Juin 2015</span>
-                                    </div>
-                                    <div class="line end-timeline"></div>
-                                    <div class="timeline-body">
-                                        <h3>Baccalauréat ES</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-
-                <section id="skills">
-                    <h2>Compétences</h2>
-                    <hr>
-                    <div id="skills-container">
-                        <div class="skills-item">
-                            <img src="assets/img/svg/skills-icon/html.svg" alt="HTML" />
-                            <p>HTML</p>
-                            <div class="overlay-skills">
-                                <h3>HTML</h3>
-                                <ul>
-                                    <li>Balises structurantes</li>
-                                    <li>Référencement</li>
-                                    <li>Création de nombreux sites web</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="skills-item">
-                            <img src="assets/img/svg/skills-icon/css.svg" alt="CSS" />
-                            <p>CSS</p>
-                            <div class="overlay-skills">
-                                <h3>CSS</h3>
-                                <ul>
-                                    <li>Propriétés de base</li>
-                                    <li>Mise en page avec Flexbox</li>
-                                    <li>Utilisation de framework CSS</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="skills-item">
-                            <img src="assets/img/svg/skills-icon/php.svg" alt="PHP" />
-                            <p>PHP</p>
-                            <div class="overlay-skills">
-                                <h3>PHP</h3>
-                                <ul>
-                                    <li>Programmmation orientée objet</li>
-                                    <li>Architecture MVC</li>
-                                    <li>CRUD</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="skills-item">
-                            <img src="assets/img/svg/skills-icon/symfony.svg" alt="Symfony" />
-                            <p>Symfony</p>
-                            <div class="overlay-skills">
-                                <h3>Symfony</h3>
-                                <ul>
-                                    <li>Architecture MVC</li>
-                                    <li>Programmation orientée objet</li>
-                                    <li>Création d'API</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="skills-item">
-                            <img src="assets/img/svg/skills-icon/laravel.svg" alt="Laravel" />
-                            <p>Laravel</p>
-                            <div class="overlay-skills">
-                                <h3>Laravel</h3>
-                                <ul>
-                                    <li>Bases du framework</li>
-                                    <li>Création d'une API</li>
-                                    <li>Pratique de l'ORM Eloquent</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="skills-item">
-                            <img src="assets/img/svg/skills-icon/postgresql.svg" alt="PostgreSQL" />
-                            <p>PostgreSQL</p>
-                            <div class="overlay-skills">
-                                <h3>PostgreSQL</h3>
-                                <ul>
-                                    <li>Requêtes de base en SQL</li>
-                                    <li>Jointures</li>
-                                    <li>Les schémas</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="skills-item">
-                            <img src="assets/img/svg/skills-icon/mysql.svg" alt="MySQL" />
-                            <p>MySQL</p>
-                            <div class="overlay-skills">
-                                <h3>MySQL</h3>
-                                <ul>
-                                    <li>Requêtes de base en SQL</li>
-                                    <li>Utilisation du SGBD sur de nombreux projets</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="skills-item">
-                            <img src="assets/img/svg/skills-icon/javascript.svg" alt="Javascript" />
-                            <p>Javascript</p>
-                            <div class="overlay-skills">
-                                <h3>Javascript</h3>
-                                <ul>
-                                    <li>Programmation orientée objet</li>
-                                    <li>Manipulation du DOM</li>
-                                    <li>Récupération de données (API)</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="skills-item">
-                            <img src="assets/img/svg/skills-icon/nodejs.svg" alt="Nodejs" />
-                            <p>NodeJS</p>
-                            <div class="overlay-skills">
-                                <h3>NodeJS</h3>
-                                <ul>
-                                    <li>Websocket</li>
-                                    <li>Expressjs</li>
-                                    <li>Création d'API</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="skills-item">
-                            <img src="assets/img/svg/skills-icon/angular.svg" alt="Angular" />
-                            <p>Angular</p>
-                            <div class="overlay-skills">
-                                <h3>Angular</h3>
-                                <ul>
-                                    <li>Composants</li>
-                                    <li>Rxjs</li>
-                                    <li>Application web avec interrogation d'une API</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="skills-item">
-                            <img src="assets/img/svg/skills-icon/Ionic.svg" alt="Ionic" />
-                            <p>Ionic</p>
-                            <div class="overlay-skills">
-                                <h3>Ionic</h3>
-                                <ul>
-                                    <li>Requêtes vers des API</li>
-                                    <li>Utilisation d'Angular</li>
-                                    <li>Création d'application mobile</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="skills-item">
-                            <img src="assets/img/svg/skills-icon/vue.svg" alt="Vue" />
-                            <p>Vue</p>
-                            <div class="overlay-skills">
-                                <h3>Vue</h3>
-                                <ul>
-                                    <li>Composants</li>
-                                    <li>Vuex</li>
-                                    <li>Utilisation du framework sur différents projets</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="projects">
-                    <h2>Réalisations</h2>
-                    <hr>
-
-                    <div class="buttons">
-                        <a href="#" id="all-projects" class="btn medium blue">Tous</a>
-                        <a href="#" id="school-projects" class="btn medium outline-inverse">Projets d'école</a>
-                        <a href="#" id="pro-projects" class="btn medium outline-inverse">Projets professionnels</a>
-                    </div>
-
-                    <div id="projects-container">
-                        <div class="project-item school">
-                            <picture>
-                                <source type="image/webp" data-srcset="assets/img/projects/limon.webp" />
-                                <img data-src="assets/img/projects/limon.png" alt="Projet Limon" class="lazyload" />
-                            </picture>
-                            <div class="overlay-project">
-                                <h3>Limon</h3>
-                                <p>Développement backend d'une PWA & d'une API de service de vidéo à la demande (VOD).</p>
-                                <div class="technologies">
-                                    <img src="assets/img/svg/skills-icon/angular.svg" />
-                                    <img src="assets/img/svg/skills-icon/symfony.svg" />
-                                </div>
-                                <div class="buttons">
-                                    <a href="https://limon.app-tricycle.com/" class="btn white small">Projet <img src="assets/img/svg/circle-arrow-right.svg" /></a>
-                                    <a href="https://github.com/arthurgeay/limon" class="btn white small">Github <img src="assets/img/svg/github.svg" /></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-item school">
-                            <picture>
-                                <source type="image/webp" data-srcset="assets/img/projects/tricycle2.webp" />
-                                <img data-src="assets/img/projects/tricycle2.png" alt="Projet Tricycle" class="lazyload" />
-                            </picture>
-                            <div class="overlay-project">
-                                <h3>Tricycle</h3>
-                                <p>Développement backend d'une application & d'une API permettant de trier ses déchets en scannant les codes barres de produit</p>
-                                <div class="technologies">
-                                    <img src="assets/img/svg/skills-icon/Ionic.svg" />
-                                    <img src="assets/img/svg/skills-icon/nodejs.svg" />
-                                    <img src="assets/img/svg/skills-icon/mongodb.svg" />
-                                </div>
-                                <div class="buttons">
-                                    <a href="https://app-tricycle.com/" class="btn white small">Projet <img src="assets/img/svg/circle-arrow-right.svg" /></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-item school">
-                            <picture>
-                                <source type="image/webp" data-srcset="assets/img/projects/salty.webp" />
-                                <img data-src="assets/img/projects/salty.png" alt="Projet Salty" class="lazyload" />
-                            </picture>
-
-                            <div class="overlay-project">
-                                <h3>Salty</h3>
-                                <p>Développement logiciel d'un utilitaire graphique de chiffrement/déchiffrement de fichier</p>
-                                <div class="technologies">
-                                    <img src="assets/img/svg/skills-icon/python.svg" />
-                                </div>
-                                <div class="buttons">
-                                    <a href="https://github.com/arthurgeay/salty" class="btn white small">Github <img src="assets/img/svg/github.svg" /></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-item school">
-                            <picture>
-                                <source type="image/webp" data-srcset="assets/img/projects/laravel-alternance.webp" alt="Projet Laravel alternance" />
-                                <img data-src="assets/img/projects/laravel-alternance.png" alt="Projet laravel alternance" class="lazyload" />
-                            </picture>
-                            
-                            <div class="overlay-project">
-                                <h3>Laravel Alternance</h3>
-                                <p>Développement backend d'une application web de gestion de candidature</p>
-                                <div class="technologies">
-                                    <img src="assets/img/svg/skills-icon/laravel.svg" />
-                                    <img src="assets/img/svg/skills-icon/mysql-white.svg" />
-                                </div>
-                                <div class="buttons">
-                                    <a href="http://laravel-alternance.herokuapp.com/" class="btn white small">Projet <img src="assets/img/svg/circle-arrow-right.svg" /></a>
-                                    <a href="https://github.com/arthurgeay/laravel-alternance" class="btn white small">Github <img src="assets/img/svg/github.svg" /></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-item school">
-                            <picture>
-                                <source type="image/webp" data-srcset="assets/img/projects/portfolio-ynov.webp" alt="projet portfolio ynov" />
-                                <img data-src="assets/img/projects/portfolio-ynov.png" alt="Projet portfolio ynov" class="lazyload" />
-                            </picture>
-                            
-                            <div class="overlay-project">
-                                <h3>Portfolio</h3>
-                                <p>Développement d'un portfolio administrable (architecture MVC)</p>
-                                <div class="technologies">
-                                    <img src="assets/img/svg/skills-icon/php.svg" />
-                                    <img src="assets/img/svg/skills-icon/mysql-white.svg" />
-                                </div>
-                                <div class="buttons">
-                                    <a href="https://github.com/arthurgeay/portfolio-v2" class="btn white small">Github <img src="assets/img/svg/github.svg" /></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-item pro">
-                            <picture>
-                                <source type="image/webp" data-srcset="assets/img/projects/carmanager.webp" />
-                                <img data-src="assets/img/projects/carmanager.png" alt="Projet Carmanager"class="lazyload" />
-                            </picture>
-                            <div class="overlay-project">
-                                <h3>Carmanager</h3>
-                                <p>Développement fullstack d'un outil de gestion de parc de véhicules </p>
-                                <div class="technologies">
-                                    <img src="assets/img/svg/skills-icon/symfony.svg" />
-                                    <img src="assets/img/svg/skills-icon/mysql-white.svg" />
-                                </div>
-                            </div>
-                        </div>
-                        
-
-                    </div>
-                    <a href="#" id="load-project" class="btn orange enormous">Voir plus de projets...</a>
-
-                </section>
-
-
-                <section id="contact">
-                    <h2>Contact</h2>
-                    <hr>
-                    <p>Vous êtes intéressé par mon profil ?</p>
-                    <a href="mailto:arthurgeay.contact@gmail.com" class="btn orange enormous">arthurgeay.contact@gmail.com</a>
-                </section>
-            </main>
+            <a href="https://github.com/arthurgeay">
+              <svg
+                width="40"
+                height="39"
+                viewBox="0 0 40 39"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M20.0711 0C9.06592 0 0.141846 8.92332 0.141846 19.9317C0.141846 28.7381 5.85218 36.2095 13.7707 38.8451C14.7667 39.0296 15.1323 38.4127 15.1323 37.8862C15.1323 37.4109 15.1139 35.8408 15.1053 34.1753C9.56095 35.381 8.39102 31.8236 8.39102 31.8236C7.48446 29.5197 6.17824 28.9071 6.17824 28.9071C4.37006 27.67 6.31454 27.6955 6.31454 27.6955C8.31578 27.8357 9.36953 29.7495 9.36953 29.7495C11.147 32.7966 14.0317 31.9157 15.169 31.4064C15.3478 30.1185 15.8643 29.2385 16.4343 28.7411C12.0077 28.2371 7.35443 26.528 7.35443 18.8906C7.35443 16.7145 8.13295 14.9365 9.40782 13.5406C9.20089 13.0382 8.51874 11.0113 9.60088 8.26583C9.60088 8.26583 11.2744 7.73013 15.0828 10.3089C16.6725 9.86731 18.3774 9.64583 20.0711 9.63824C21.7648 9.64583 23.471 9.86731 25.0636 10.3089C28.8674 7.73013 30.5387 8.26583 30.5387 8.26583C31.6234 11.0113 30.941 13.0382 30.734 13.5406C32.0119 14.9365 32.7851 16.7145 32.7851 18.8906C32.7851 26.5462 28.1229 28.2318 23.6851 28.7253C24.4 29.3438 25.0369 30.5568 25.0369 32.4164C25.0369 35.083 25.0138 37.2294 25.0138 37.8862C25.0138 38.4166 25.3725 39.0382 26.3827 38.8424C34.2969 36.2039 40 28.7352 40 19.9317C40 8.92332 31.0773 0 20.0711 0Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.6901 28.6177C7.64621 28.717 7.49044 28.7464 7.34853 28.6784C7.20398 28.6134 7.1228 28.4784 7.16966 28.379C7.21256 28.277 7.36866 28.249 7.51288 28.3166C7.65776 28.382 7.74027 28.5183 7.6901 28.6177Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.49724 29.5181C8.40219 29.6062 8.21639 29.5653 8.09032 29.426C7.95996 29.287 7.93554 29.1012 8.03191 29.0117C8.12992 28.9236 8.31011 28.9649 8.4408 29.1038C8.57116 29.2444 8.59657 29.429 8.49724 29.5181Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9.28303 30.666C9.16092 30.7509 8.96126 30.6713 8.83784 30.4941C8.71573 30.3168 8.71573 30.1043 8.84048 30.0191C8.96423 29.934 9.16092 30.0105 9.286 30.1865C9.40778 30.3663 9.40778 30.5792 9.28303 30.666Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10.3595 31.7751C10.2503 31.8955 10.0176 31.8632 9.84736 31.6988C9.67311 31.5381 9.62459 31.31 9.73416 31.1895C9.84472 31.0687 10.0787 31.1027 10.2503 31.2658C10.4232 31.4262 10.476 31.6559 10.3595 31.7751Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.8446 32.419C11.7964 32.5751 11.5724 32.6461 11.3466 32.5798C11.1212 32.5114 10.9737 32.3286 11.0192 32.1708C11.0661 32.0137 11.2912 31.9398 11.5186 32.0107C11.7436 32.0787 11.8915 32.2603 11.8446 32.419Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M13.4757 32.5385C13.4813 32.7029 13.2899 32.8392 13.0529 32.8418C12.8146 32.8475 12.6219 32.7144 12.6193 32.5527C12.6193 32.3867 12.8064 32.2517 13.0447 32.2477C13.2816 32.2431 13.4757 32.3751 13.4757 32.5385Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14.9934 32.2801C15.0218 32.4405 14.8571 32.6052 14.6218 32.6488C14.3904 32.6913 14.1763 32.5923 14.1469 32.4332C14.1182 32.2688 14.2858 32.1041 14.5168 32.0616C14.7525 32.0206 14.9633 32.117 14.9934 32.2801Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
+          <input class="burger" type="checkbox" />
         </div>
+      </nav>
 
+      <main>
+        <header id="welcome">
+          <h2>Bienvenue</h2>
+          <p>
+            Passionné d'informatique et de nouvelles technologies, mon projet
+            professionnel s'oriente vers les métiers du web et plus
+            particulièrement celui de développeur web Backend.
+          </p>
+          <div class="buttons">
+            <a href="#projects" class="btn big orange">
+              <svg
+                width="29"
+                height="30"
+                viewBox="0 0 29 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M21.7501 4.99472C21.7501 6.32983 22.8321 7.41215 24.1667 7.41215C25.5014 7.41215 26.5834 6.32983 26.5834 4.99472C26.5834 3.65961 25.5014 2.57729 24.1667 2.57729C22.8321 2.57729 21.7501 3.65961 21.7501 4.99472ZM24.1667 17.0819C22.8321 17.0819 21.7501 15.9996 21.7501 14.6645C21.7501 13.3293 22.8321 12.247 24.1667 12.247C25.5014 12.247 26.5834 13.3293 26.5834 14.6645C26.5834 15.9996 25.5014 17.0819 24.1667 17.0819ZM24.1667 26.7516C22.8321 26.7516 21.7501 25.6693 21.7501 24.3342C21.7501 22.9991 22.8321 21.9168 24.1667 21.9168C25.5014 21.9168 26.5834 22.9991 26.5834 24.3342C26.5834 25.6693 25.5014 26.7516 24.1667 26.7516ZM14.5001 26.7516C13.1654 26.7516 12.0834 25.6693 12.0834 24.3342C12.0834 22.9991 13.1654 21.9168 14.5001 21.9168C15.8348 21.9168 16.9167 22.9991 16.9167 24.3342C16.9167 25.6693 15.8348 26.7516 14.5001 26.7516ZM12.0834 14.6645C12.0834 15.9996 13.1654 17.0819 14.5001 17.0819C15.8348 17.0819 16.9167 15.9996 16.9167 14.6645C16.9167 13.3293 15.8348 12.247 14.5001 12.247C13.1654 12.247 12.0834 13.3293 12.0834 14.6645ZM14.5001 7.41215C13.1654 7.41215 12.0834 6.32983 12.0834 4.99472C12.0834 3.65961 13.1654 2.57729 14.5001 2.57729C15.8348 2.57729 16.9167 3.65961 16.9167 4.99472C16.9167 6.32983 15.8348 7.41215 14.5001 7.41215ZM2.41675 24.3342C2.41675 25.6693 3.49873 26.7516 4.83341 26.7516C6.1681 26.7516 7.25008 25.6693 7.25008 24.3342C7.25008 22.9991 6.1681 21.9168 4.83341 21.9168C3.49873 21.9168 2.41675 22.9991 2.41675 24.3342ZM4.83341 17.0819C3.49873 17.0819 2.41675 15.9996 2.41675 14.6645C2.41675 13.3293 3.49873 12.247 4.83341 12.247C6.1681 12.247 7.25008 13.3293 7.25008 14.6645C7.25008 15.9996 6.1681 17.0819 4.83341 17.0819ZM2.41675 4.99472C2.41675 6.32983 3.49873 7.41215 4.83341 7.41215C6.1681 7.41215 7.25008 6.32983 7.25008 4.99472C7.25008 3.65961 6.1681 2.57729 4.83341 2.57729C3.49873 2.57729 2.41675 3.65961 2.41675 4.99472Z"
+                  fill="white"
+                />
+              </svg>
+              Mes projets
+            </a>
+            <a href="#contact" class="btn big outline">
+              <svg
+                width="29"
+                height="30"
+                viewBox="0 0 24 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2.74023 2.64378L4.10524 10.5882L4.87699 10.7486L4.10524 10.909L2.74023 18.8534L22.2362 10.7486L2.74023 2.64378ZM5.89495 9.24612L5.25996 5.55042L17.764 10.7486L5.25996 15.9467L5.89495 12.251L13.1232 10.7486L5.89495 9.24612Z"
+                  fill="white"
+                />
+              </svg>
+              Me contacter
+            </a>
+          </div>
+        </header>
 
-        <footer>
-            <p>Arthur Geay Portfolio - <a href="mentions-legales.html">Mentions Légales</a></p>
-        </footer> 
+        <section id="about">
+          <h2>A propos</h2>
+          <hr />
+          <div id="content-container">
+            <img
+              class="lazyload"
+              data-src="assets/img/profile.jpeg"
+              alt="Image de profil"
+            />
 
-        <script src="assets/js/lazy-loading.js"></script>
-        <script src="assets/js/menu.js"></script>
-        <script src="assets/js/skills.js"></script>
-        <script src="assets/js/projects.js"></script>
-        <script src="assets/js/smooth-scroll.js"></script>
-        <script src="assets/js/scroll.js"></script>
-        <script src="assets/js/scrollspy.js"></script>
-    </body>
+            <div id="content-about">
+              <p>
+                En parallèle de mes études, je suis développeur web Freelance
+                (depuis 2018). Je suis à l'écoute de vos propositions pour des
+                missions de développement web.
+              </p>
+              <div id="summary-info">
+                <div>
+                  <p>Nom complet : <strong>Arthur Geay</strong></p>
+                  <p>Date de naissance : <strong>01/09/1997</strong></p>
+                </div>
+                <div>
+                  <p>Adresse : <strong>Nantes</strong></p>
+                  <p>Adresse e-mail : <strong>arthur.geay@ynov.com</strong></p>
+                </div>
+              </div>
+              <div class="buttons">
+                <a href="assets/doc/CV.pdf" class="btn medium orange">
+                  <img src="assets/img/svg/download.svg" />
+                  Télécharger mon CV
+                </a>
+                <a href="#contact" class="btn medium blue">
+                  <img src="assets/img/svg/send.svg" />
+                  Me contacter
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="experiences">
+          <h2>Parcours</h2>
+          <div id="experiences-container">
+            <div id="pro">
+              <h2>Expériences professionnelles</h2>
+              <hr />
+
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-date">
+                    <span>Janvier 2022 - Aujourd'hui</span>
+                  </div>
+                  <div class="line"></div>
+                  <div class="timeline-body">
+                    <h3>
+                      Développeur fullstack @
+                      <span class="place-experience"
+                        ><a href="https://impacttrack.org/fr"
+                          >Impact Track</a
+                        ></span
+                      >
+                    </h3>
+                    <p><strong>Les missions :</strong></p>
+                    <ul>
+                      <li>
+                        Développement de nouvelles fonctionnalités pour la
+                        plateforme de mesure d'impact "Impact Track"
+                      </li>
+                      <li>Maintenance applicative</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-date">
+                    <span>Janvier 2021 - Décembre 2021</span>
+                  </div>
+                  <div class="line"></div>
+                  <div class="timeline-body">
+                    <h3>
+                      Développeur PHP @
+                      <span class="place-experience"
+                        ><a href="https://www.vigicorp.fr/">Vigicorp</a></span
+                      >
+                    </h3>
+                    <p><strong>Les missions :</strong></p>
+                    <ul>
+                      <li>
+                        Développement de nouvelles fonctionnalités pour l'outil
+                        de gestion d'une entreprise
+                        <a href="https://www.magestion.bycerfrance.fr"
+                          >Ma Gestion by Cerfrance</a
+                        >
+                      </li>
+                      <li>Maintenance applicative</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-date">
+                    <span>Septembre 2020 - Janvier 2021</span>
+                  </div>
+                  <div class="line"></div>
+                  <div class="timeline-body">
+                    <h3>
+                      Développeur fullstack @
+                      <span class="place-experience"
+                        ><a href="https://captiv.eu">Captiv</a></span
+                      >
+                    </h3>
+                    <p><strong>Les missions :</strong></p>
+                    <ul>
+                      <li>
+                        Développement de nouvelles fonctionnalités pour le
+                        backoffice du produit
+                        <a href="https://www.mistergaspard.com/">Gaspard.</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-date">
+                    <span>Juillet 2020 - Août 2020</span>
+                  </div>
+                  <div class="line"></div>
+                  <div class="timeline-body">
+                    <h3>
+                      Stage développeur @
+                      <span class="place-experience"
+                        ><a href="https://satelix.fr">Satelix</a></span
+                      >
+                    </h3>
+                    <p><strong>Les missions :</strong></p>
+                    <ul>
+                      <li>
+                        Analyse et conception d'une application de gestion
+                        familiale
+                      </li>
+                      <li>Rédaction d'un business plan</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-date">
+                    <span>Juillet 2019 - Août 2019</span>
+                  </div>
+                  <div class="line"></div>
+                  <div class="timeline-body">
+                    <h3>
+                      Testeur de produit @
+                      <span class="place-experience"
+                        ><a href="https://www.envoliis.com/">ENVOLiiS</a></span
+                      >
+                    </h3>
+                    <p><strong>Les missions :</strong></p>
+                    <ul>
+                      <li>Mise en place d'un POC sur plusieurs solutions</li>
+                      <li>
+                        Intégration de données existantes dans les nouveaux
+                        outils
+                      </li>
+                      <li>Rédaction d'une documentation</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-date">
+                    <span>Novembre 2018 - Juin 2019</span>
+                  </div>
+                  <div class="line"></div>
+                  <div class="timeline-body">
+                    <h3>
+                      Développeur base de données @
+                      <span class="place-experience"
+                        ><a href="https://www.envoliis.com/">ENVOLiiS</a></span
+                      >
+                    </h3>
+                    <p><strong>Les missions :</strong></p>
+                    <ul>
+                      <li>Débôguage d'une base de données Access</li>
+                      <li>Remise en fonctionnement de la base de données</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-date">
+                    <span>Juillet 2018 - Août 2018</span>
+                  </div>
+                  <div class="line"></div>
+                  <div class="timeline-body">
+                    <h3>
+                      Développeur web @
+                      <span class="place-experience"
+                        ><a href="https://www.envoliis.com/">ENVOLiiS</a></span
+                      >
+                    </h3>
+                    <p><strong>Les missions :</strong></p>
+                    <ul>
+                      <li>Développement d'un portail Power BI</li>
+                      <li>Développement d'un outil d'import de contrat</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-date">
+                    <span>Mai 2018 - Aujourd'hui</span>
+                  </div>
+                  <div class="line"></div>
+                  <div class="timeline-body">
+                    <h3>Développeur web freelance</h3>
+                    <p>Création d'une auto-entreprise de développement web.</p>
+                    <p><strong>Les missions :</strong></p>
+                    <ul>
+                      <li>
+                        Car Manager (Mai 2018) : Développement d'une application
+                        web destinée à gérer la flotte de véhicule des sociétés
+                        Duotech, Satelix et ARF
+                      </li>
+                      <li>
+                        Valerie-dauphin.fr (Juin 2018) : Développement d'un
+                        portfolio pour l'auteure de littérature jeunesse Valérie
+                        Dauphin
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="school">
+              <h2>Formations</h2>
+              <hr />
+
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-date">
+                    <span>Septembre 2021 - Aujourd'hui</span>
+                  </div>
+                  <div class="line"></div>
+                  <div class="timeline-body">
+                    <h3>
+                      Master Expert en Développement web @
+                      <span class="place-experience"
+                        ><a href="https://www.ynov.com/">Ynov Nantes</a></span
+                      >
+                    </h3>
+                    <p>
+                      Titre d’Expert Informatique et Systèmes d’Information,
+                      enregistré au Répertoire National de la Certification
+                      Professionnelle (RNCP) au niveau I.)
+                    </p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-date">
+                    <span>Septembre 2018 - Septembre 2021</span>
+                  </div>
+                  <div class="line"></div>
+                  <div class="timeline-body">
+                    <h3>
+                      Bachelor informatique @
+                      <span class="place-experience"
+                        ><a href="https://www.ynov.com/">Ynov Nantes</a></span
+                      >
+                    </h3>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-date">
+                    <span>Janvier 2017 - Janvier 2018</span>
+                  </div>
+                  <div class="line"></div>
+                  <div class="timeline-body">
+                    <h3>
+                      Titre professionnel de Chef de projet multimédia @
+                      <span class="place-experience"
+                        ><a href="https://openclassrooms.com/fr/"
+                          >OpenClassrooms / IESA Multimédia</a
+                        ></span
+                      >
+                    </h3>
+                    <p>
+                      Titre professionnel de Chef de projet multimédia
+                      enregistré au Répertoire National de la Certification
+                      Professionnelle (RNCP) au niveau II.)
+                    </p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-date">
+                    <span>Juin 2015</span>
+                  </div>
+                  <div class="line end-timeline"></div>
+                  <div class="timeline-body">
+                    <h3>Baccalauréat ES</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="skills">
+          <h2>Compétences</h2>
+          <hr />
+          <div id="skills-container">
+            <div class="skills-item">
+              <img src="assets/img/svg/skills-icon/html.svg" alt="HTML" />
+              <p>HTML</p>
+              <div class="overlay-skills">
+                <h3>HTML</h3>
+                <ul>
+                  <li>Balises structurantes</li>
+                  <li>Référencement</li>
+                  <li>Création de nombreux sites web</li>
+                </ul>
+              </div>
+            </div>
+            <div class="skills-item">
+              <img src="assets/img/svg/skills-icon/css.svg" alt="CSS" />
+              <p>CSS</p>
+              <div class="overlay-skills">
+                <h3>CSS</h3>
+                <ul>
+                  <li>Propriétés de base</li>
+                  <li>Mise en page avec Flexbox</li>
+                  <li>Utilisation de framework CSS</li>
+                </ul>
+              </div>
+            </div>
+            <div class="skills-item">
+              <img src="assets/img/svg/skills-icon/php.svg" alt="PHP" />
+              <p>PHP</p>
+              <div class="overlay-skills">
+                <h3>PHP</h3>
+                <ul>
+                  <li>Programmmation orientée objet</li>
+                  <li>Architecture MVC</li>
+                  <li>CRUD</li>
+                </ul>
+              </div>
+            </div>
+            <div class="skills-item">
+              <img src="assets/img/svg/skills-icon/symfony.svg" alt="Symfony" />
+              <p>Symfony</p>
+              <div class="overlay-skills">
+                <h3>Symfony</h3>
+                <ul>
+                  <li>Architecture MVC</li>
+                  <li>Programmation orientée objet</li>
+                  <li>Création d'API</li>
+                </ul>
+              </div>
+            </div>
+            <div class="skills-item">
+              <img src="assets/img/svg/skills-icon/laravel.svg" alt="Laravel" />
+              <p>Laravel</p>
+              <div class="overlay-skills">
+                <h3>Laravel</h3>
+                <ul>
+                  <li>Bases du framework</li>
+                  <li>Création d'une API</li>
+                  <li>Pratique de l'ORM Eloquent</li>
+                </ul>
+              </div>
+            </div>
+            <div class="skills-item">
+              <img
+                src="assets/img/svg/skills-icon/postgresql.svg"
+                alt="PostgreSQL"
+              />
+              <p>PostgreSQL</p>
+              <div class="overlay-skills">
+                <h3>PostgreSQL</h3>
+                <ul>
+                  <li>Requêtes de base en SQL</li>
+                  <li>Jointures</li>
+                  <li>Les schémas</li>
+                </ul>
+              </div>
+            </div>
+            <div class="skills-item">
+              <img src="assets/img/svg/skills-icon/mysql.svg" alt="MySQL" />
+              <p>MySQL</p>
+              <div class="overlay-skills">
+                <h3>MySQL</h3>
+                <ul>
+                  <li>Requêtes de base en SQL</li>
+                  <li>Utilisation du SGBD sur de nombreux projets</li>
+                </ul>
+              </div>
+            </div>
+            <div class="skills-item">
+              <img
+                src="assets/img/svg/skills-icon/javascript.svg"
+                alt="Javascript"
+              />
+              <p>Javascript</p>
+              <div class="overlay-skills">
+                <h3>Javascript</h3>
+                <ul>
+                  <li>Programmation orientée objet</li>
+                  <li>Manipulation du DOM</li>
+                  <li>Récupération de données (API)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="skills-item">
+              <img src="assets/img/svg/skills-icon/nodejs.svg" alt="Nodejs" />
+              <p>NodeJS</p>
+              <div class="overlay-skills">
+                <h3>NodeJS</h3>
+                <ul>
+                  <li>Websocket</li>
+                  <li>Expressjs</li>
+                  <li>Création d'API</li>
+                </ul>
+              </div>
+            </div>
+            <div class="skills-item">
+              <img src="assets/img/svg/skills-icon/angular.svg" alt="Angular" />
+              <p>Angular</p>
+              <div class="overlay-skills">
+                <h3>Angular</h3>
+                <ul>
+                  <li>Composants</li>
+                  <li>Rxjs</li>
+                  <li>Application web avec interrogation d'une API</li>
+                </ul>
+              </div>
+            </div>
+            <div class="skills-item">
+              <img src="assets/img/svg/skills-icon/Ionic.svg" alt="Ionic" />
+              <p>Ionic</p>
+              <div class="overlay-skills">
+                <h3>Ionic</h3>
+                <ul>
+                  <li>Requêtes vers des API</li>
+                  <li>Utilisation d'Angular</li>
+                  <li>Création d'application mobile</li>
+                </ul>
+              </div>
+            </div>
+            <div class="skills-item">
+              <img src="assets/img/svg/skills-icon/vue.svg" alt="Vue" />
+              <p>Vue</p>
+              <div class="overlay-skills">
+                <h3>Vue</h3>
+                <ul>
+                  <li>Composants</li>
+                  <li>Vuex</li>
+                  <li>Utilisation du framework sur différents projets</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects">
+          <h2>Réalisations</h2>
+          <hr />
+
+          <div class="buttons">
+            <a href="#" id="all-projects" class="btn medium blue">Tous</a>
+            <a href="#" id="school-projects" class="btn medium outline-inverse"
+              >Projets d'école</a
+            >
+            <a href="#" id="pro-projects" class="btn medium outline-inverse"
+              >Projets professionnels</a
+            >
+          </div>
+
+          <div id="projects-container">
+            <div class="project-item school">
+              <picture>
+                <source
+                  type="image/webp"
+                  data-srcset="assets/img/projects/limon.webp"
+                />
+                <img
+                  data-src="assets/img/projects/limon.png"
+                  alt="Projet Limon"
+                  class="lazyload"
+                />
+              </picture>
+              <div class="overlay-project">
+                <h3>Limon</h3>
+                <p>
+                  Développement backend d'une PWA & d'une API de service de
+                  vidéo à la demande (VOD).
+                </p>
+                <div class="technologies">
+                  <img src="assets/img/svg/skills-icon/angular.svg" />
+                  <img src="assets/img/svg/skills-icon/symfony.svg" />
+                </div>
+                <div class="buttons">
+                  <a
+                    href="https://limon.app-tricycle.com/"
+                    class="btn white small"
+                    >Projet <img src="assets/img/svg/circle-arrow-right.svg"
+                  /></a>
+                  <a
+                    href="https://github.com/arthurgeay/limon"
+                    class="btn white small"
+                    >Github <img src="assets/img/svg/github.svg"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-item school">
+              <picture>
+                <source
+                  type="image/webp"
+                  data-srcset="assets/img/projects/tricycle2.webp"
+                />
+                <img
+                  data-src="assets/img/projects/tricycle2.png"
+                  alt="Projet Tricycle"
+                  class="lazyload"
+                />
+              </picture>
+              <div class="overlay-project">
+                <h3>Tricycle</h3>
+                <p>
+                  Développement backend d'une application & d'une API permettant
+                  de trier ses déchets en scannant les codes barres de produit
+                </p>
+                <div class="technologies">
+                  <img src="assets/img/svg/skills-icon/Ionic.svg" />
+                  <img src="assets/img/svg/skills-icon/nodejs.svg" />
+                  <img src="assets/img/svg/skills-icon/mongodb.svg" />
+                </div>
+                <div class="buttons">
+                  <a href="https://app-tricycle.com/" class="btn white small"
+                    >Projet <img src="assets/img/svg/circle-arrow-right.svg"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-item school">
+              <picture>
+                <source
+                  type="image/webp"
+                  data-srcset="assets/img/projects/salty.webp"
+                />
+                <img
+                  data-src="assets/img/projects/salty.png"
+                  alt="Projet Salty"
+                  class="lazyload"
+                />
+              </picture>
+
+              <div class="overlay-project">
+                <h3>Salty</h3>
+                <p>
+                  Développement logiciel d'un utilitaire graphique de
+                  chiffrement/déchiffrement de fichier
+                </p>
+                <div class="technologies">
+                  <img src="assets/img/svg/skills-icon/python.svg" />
+                </div>
+                <div class="buttons">
+                  <a
+                    href="https://github.com/arthurgeay/salty"
+                    class="btn white small"
+                    >Github <img src="assets/img/svg/github.svg"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-item school">
+              <picture>
+                <source
+                  type="image/webp"
+                  data-srcset="assets/img/projects/laravel-alternance.webp"
+                  alt="Projet Laravel alternance"
+                />
+                <img
+                  data-src="assets/img/projects/laravel-alternance.png"
+                  alt="Projet laravel alternance"
+                  class="lazyload"
+                />
+              </picture>
+
+              <div class="overlay-project">
+                <h3>Laravel Alternance</h3>
+                <p>
+                  Développement backend d'une application web de gestion de
+                  candidature
+                </p>
+                <div class="technologies">
+                  <img src="assets/img/svg/skills-icon/laravel.svg" />
+                  <img src="assets/img/svg/skills-icon/mysql-white.svg" />
+                </div>
+                <div class="buttons">
+                  <a
+                    href="http://laravel-alternance.herokuapp.com/"
+                    class="btn white small"
+                    >Projet <img src="assets/img/svg/circle-arrow-right.svg"
+                  /></a>
+                  <a
+                    href="https://github.com/arthurgeay/laravel-alternance"
+                    class="btn white small"
+                    >Github <img src="assets/img/svg/github.svg"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-item school">
+              <picture>
+                <source
+                  type="image/webp"
+                  data-srcset="assets/img/projects/portfolio-ynov.webp"
+                  alt="projet portfolio ynov"
+                />
+                <img
+                  data-src="assets/img/projects/portfolio-ynov.png"
+                  alt="Projet portfolio ynov"
+                  class="lazyload"
+                />
+              </picture>
+
+              <div class="overlay-project">
+                <h3>Portfolio</h3>
+                <p>
+                  Développement d'un portfolio administrable (architecture MVC)
+                </p>
+                <div class="technologies">
+                  <img src="assets/img/svg/skills-icon/php.svg" />
+                  <img src="assets/img/svg/skills-icon/mysql-white.svg" />
+                </div>
+                <div class="buttons">
+                  <a
+                    href="https://github.com/arthurgeay/portfolio-v2"
+                    class="btn white small"
+                    >Github <img src="assets/img/svg/github.svg"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-item pro">
+              <picture>
+                <source
+                  type="image/webp"
+                  data-srcset="assets/img/projects/carmanager.webp"
+                />
+                <img
+                  data-src="assets/img/projects/carmanager.png"
+                  alt="Projet Carmanager"
+                  class="lazyload"
+                />
+              </picture>
+              <div class="overlay-project">
+                <h3>Carmanager</h3>
+                <p>
+                  Développement fullstack d'un outil de gestion de parc de
+                  véhicules
+                </p>
+                <div class="technologies">
+                  <img src="assets/img/svg/skills-icon/symfony.svg" />
+                  <img src="assets/img/svg/skills-icon/mysql-white.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" id="load-project" class="btn orange enormous"
+            >Voir plus de projets...</a
+          >
+        </section>
+
+        <section id="contact">
+          <h2>Contact</h2>
+          <hr />
+          <p>Vous êtes intéressé par mon profil ?</p>
+          <a
+            href="mailto:arthurgeay.contact@gmail.com"
+            class="btn orange enormous"
+            >arthurgeay.contact@gmail.com</a
+          >
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <p>
+        Arthur Geay Portfolio -
+        <a href="mentions-legales.html">Mentions Légales</a>
+      </p>
+    </footer>
+
+    <script src="assets/js/lazy-loading.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/skills.js"></script>
+    <script src="assets/js/projects.js"></script>
+    <script src="assets/js/smooth-scroll.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/scrollspy.js"></script>
+  </body>
 </html>
